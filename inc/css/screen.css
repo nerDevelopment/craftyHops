@@ -1,0 +1,467 @@
+/*
+Author:  nerDevelopment
+Project: Crfty Hops
+Date: 11/6/12
+*/
+
+/* Style Guide
+	html background color  #411a0a
+	header background color #2f0c02
+	font color #f0ece9
+*/
+
+/*----------------Fonts----------------------------*/
+@font-face {
+    font-family: 'catshop';
+    src: url('../fonts/catShop/catshop-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Luxi-Sans';
+    src: url('../fonts/Luxi-Sans/luxisb-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Greyscale-Basic';
+    src: url('../fonts/Greyscale-Basic/Greyscale_Basic_Bold-webfont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----------------General Styles------------------*/
+	html { 
+  	background: url(../img/bg.png) ; 
+	  /*	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;*/
+	  	color: #f0ece9;
+	  }
+	  
+	  .container {
+	      width: 100%;
+	      margin: 0 auto;
+	      padding-top: 2em;
+	  }
+	  
+	li{
+		list-style-type: none;
+	}
+	
+	a{
+		color: #f0ece9;
+	}
+	  
+	p, h1, form{
+	border: 0; 
+	margin: 0; 
+	padding: 0;
+	}
+
+	.clear{
+		clear: both;
+	}	
+		
+/*----------------Header  and navigation Styles------------------*/
+
+	header{
+		padding-bottom: 5em;
+		background-color: #2f0c02;
+	}
+	
+	#headerContent{
+		width: 100%;
+		margin:  0 auto;	
+		padding-top: 3em;
+	}
+
+		#logo{
+			background: url(../images/logo.png) no-repeat;
+			height: 63px;
+			width:264px;
+			margin: 0 ;
+			float: left;
+		}
+		
+		#logo a{
+			text-indent: -9999px;
+			display: block;
+			height: 63px;
+			width:264px;
+			padding: 0;
+		}
+		
+		#logoPos{
+			padding-left: 1.5em;
+		}
+		nav li a{
+			font-size: 1.5em;
+			font-family: Luxi-Sans;
+			text-decoration: none;
+			letter-spacing: 0.04em;
+			padding: 0;
+		}
+		
+		nav ul{
+			padding: 0;
+			margin: 0;
+		}
+		nav li{
+			display: inline;
+			padding-right: 1.5em;
+		}
+
+		nav{
+			float: right;
+			padding-top: 1em;
+			padding-right: 1.5em;
+		}
+
+/*----------------Global Styles------------------*/
+.notamember{
+	background-color: #a09489;
+	width: 50%;
+	margin:  0 auto;
+	border-radius: .3em;
+	padding: .5em;
+}
+.notamember p{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.membercontent{
+	text-align: center;
+}
+/*----------------Home Styles------------------*/
+.tagLine{
+	font-size: 1.5em;
+	text-align: center;
+ }
+ 
+ .subParagraph{
+ 	font-size: 1.2em;
+ 	font-family:Greyscale-Basic;
+ 	text-align: center;
+ 	padding-top: 2em;
+ 	width: 80%;
+ 	margin: 0 auto;
+ }
+
+.textShadow{
+	text-shadow: 2px 2px 5px #141414;
+	filter: dropshadow(color=#141414, offx=2, offy=2);
+	font-weight: bold;
+	font-family: Luxi-Sans;
+}
+
+.number{
+	font-size: 3.5em;
+	position: relative;
+	bottom: .3em;
+	padding-left: .5em;
+	font-family: catshop;
+}
+
+.sudggestInput {
+	border-radius: .3em;
+	font-size: 2.5em;
+	width: 60%;
+	background-color: #5e2709;
+	border-color: #582408;
+}
+
+.promoContent{
+width: 40%;	
+float: left;
+padding-top: 6.5em;
+margin-left: 8em;
+}
+
+.posInput{
+	width: 40%;
+	float: right;
+}
+.posInput ul span{
+	font-size: 5em; 
+	position: relative; 
+	right: .5em; 
+	top: .2em;
+}
+
+.findBtn{
+	background: #e77c2d; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #e77c2d 0%, #efa636 50%, #eaaa4f 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e77c2d), color-stop(50%,#efa636), color-stop(100%,#eaaa4f)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e77c2d', endColorstr='#eaaa4f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border: #c9480f;
+	border-radius: .1em;
+	width: 50%;
+	font-size: 2.5em;
+	margin: .5em 0  1em 1.7em;
+}
+
+.section{
+	background: #2f0c02;
+	width: 100%;
+}
+
+.reasons h3{
+	font-size: 2em;
+	font-family: Luxi-Sans;
+	text-shadow: 2px 2px 5px #141414;
+	filter: dropshadow(color=#141414, offx=2, offy=2);
+}
+
+.reasons p{
+	width: 80%;
+	padding-right: 1.5em;
+	border-right: 1px inset #411a0a ;
+	height: 10em;
+}
+/*----------------Form Styles------------------*/
+
+#addBeer li, #register li, #login li{
+	margin-bottom: 1em;
+	font-size: 1.3em;
+}
+
+.titles{
+	float: left;
+	width: 15%;
+}
+
+#register .titles{
+	width: 30%;
+}
+
+.fields{
+	float: right;
+}
+
+.fields input{
+	border-radius: .2em;
+	width: 60%;
+	
+	}
+
+.colorized{
+	background-color: #5e2709;
+	border-color: #582408;
+}
+
+.twoCol{
+	width: 40%;
+	margin: 0 auto;
+}
+
+#register .twoCol{
+	width: 30%;
+}
+
+.file{
+	width: 65%;
+}
+
+#or{
+	padding: 0;
+	margin: 0;
+}
+
+.fbbutton{
+	position: relative;
+	right: 8.5em;
+}
+
+/*----------------Footer Styles------------------*/
+
+footer a{
+	text-decoration: underline;
+	display: inline;
+}
+
+footer li{
+	display: inline;
+	padding-right: 3em;
+}
+/*----------------Media queries------------------*/
+@media screen and (max-width: 1024px) {
+	.promoContent{
+	padding-top: 3.5em;
+	}
+	
+	.findBtn{
+		font-size: 2em;
+		margin-left: 2em;
+	}
+	
+	#register .titles{
+		width: 60%;
+	}
+	
+	#register .twoCol{
+		width: 50%;
+	}
+	
+	#register .fields input{
+		width: 56%;
+	}
+
+	
+}
+@media screen and (max-width: 768px) {
+	.container{
+		padding-top: 4em;
+	}
+	.promoContent{
+	padding-top: 3.5em;
+	margin-left: 4em;
+	}
+	
+	.twoCol{
+		width: 70%;
+	}
+	
+	#register .fields input{
+		width: 56%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container{
+		padding-top: 6em;
+	}
+	.promoContent{
+	margin-left: 2em;
+	}
+	nav{
+		font-size: .9em;
+	}
+	.findBtn{
+		font-size: 2em;
+		width: 80%;
+		margin-left: .1em;
+	}
+	
+	.reasons{
+		width: 40%;
+		margin:  0 auto;
+	}
+	
+	.reasons p{
+		border: none;	
+		width: 100%;
+	}
+	footer a{
+	display: block;
+	}
+	footer li{
+		padding: 0;
+	}
+
+	.titles{
+		margin-right: 1.5em;
+	}
+	
+	#register .twoCol{
+		width: 80%;
+	}
+	#register .titles{
+		width: 30%;
+	}
+	
+}
+@media screen and (max-width: 480px){
+	nav{
+		font-size: 1em;
+		width: 80%;
+		text-align: center;
+	}
+	
+	.promoContent{
+	clear: both;
+	width: 90%;
+	}
+	
+	.posInput{
+		clear: both;
+		width: 80%;
+	}
+	
+	.findBtn{
+		width: 70%;
+	}
+	
+	.twoCol{
+		width: 90%;
+	}
+	
+	.titles{
+		margin-right: 2.0em;
+	}
+	
+	#register .twoCol{
+		width: 90%;
+	}
+	#register .titles{
+		width: 30%;
+	}
+
+}	
+
+	@media screen and (max-width: 320px){
+		nav li {
+			display: block;
+		}
+		
+		nav{
+			padding-top: 1.5em;	
+		}
+		
+		.container{
+			padding-top: 11em;
+		}
+		
+		.promoContent{
+		width: 80%;
+		}
+		
+		.posInput{
+			width: 90%;
+		}
+		.findBtn{
+			width: 70%;
+		}
+		
+		.reasons{
+			width: 80%;
+			margin:  0 auto;
+		}
+		
+		.reasons p{
+			border: none;	
+		}
+		
+		.titles{
+			margin-right: 1.0em;
+		}
+		
+		#register .twoCol{
+			width: 98%;
+		}
+		#register .titles{
+			width: 45%;
+		}
+		#register .fields input{
+			width: 40%;
+		}
+		
+}
+

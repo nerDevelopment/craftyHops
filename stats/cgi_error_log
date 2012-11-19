@@ -1,0 +1,8 @@
+20121105T195538: crafty-hops.com/index.php
+PHP Warning:  require_once(/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php): failed to open stream: No such file or directory in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
+PHP Fatal error:  require_once(): Failed opening required '/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php' (include_path='.:/usr/local/lib/php-5.3.13/lib/php') in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
+
+20121105T195546: crafty-hops.com/index.php
+PHP Warning:  require_once(/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php): failed to open stream: No such file or directory in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
+PHP Fatal error:  require_once(): Failed opening required '/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php' (include_path='.:/usr/local/lib/php-5.3.13/lib/php') in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
+
