@@ -44,7 +44,6 @@ Date: 11/6/12
 	  .container {
 	      width: 100%;
 	      margin: 0 auto;
-	      padding-top: 2em;
 	  }
 	  
 	li{
@@ -73,7 +72,7 @@ Date: 11/6/12
 	}
 	
 	#headerContent{
-		width: 100%;
+		width: 80%;
 		margin:  0 auto;	
 		padding-top: 3em;
 	}
@@ -97,7 +96,7 @@ Date: 11/6/12
 		#logoPos{
 			padding-left: 1.5em;
 		}
-		nav li a{
+		#mainNav  li a{
 			font-size: 1.5em;
 			font-family: Luxi-Sans;
 			text-decoration: none;
@@ -109,16 +108,55 @@ Date: 11/6/12
 			padding: 0;
 			margin: 0;
 		}
-		nav li{
+		#mainNav  li{
 			display: inline;
 			padding-right: 1.5em;
 		}
 
-		nav{
+		#mainNav {
 			float: right;
 			padding-top: 1em;
 			padding-right: 1.5em;
 		}
+		
+		#sidenav li a{
+			font-size: 1.5em;
+			text-decoration: none;
+		}
+		
+
+	[role="complementary"], [role="main"] {
+		width: 80%; 
+		padding: 0 15px; 
+		display: block; 
+		position: relative; 
+		z-index: 1; 
+		-webkit-transition: 0.25s all ease-in; 
+		-moz-transition: 0.25s all ease-in; 
+		-o-transition: 0.25s all ease-in; 
+		transition: 0.25s all ease-in; 
+		background: #270f02;
+	}
+	
+	[role="complementary"] { 
+		width: 80%; 
+		margin-right: -100%;
+		float: right; 
+		z-index: 2; 
+	}
+	
+	.active [role="complementary"] { 
+		/*margin-left: 100%; */
+		position: relative;
+		right: 30em;
+	/*margin-right: 30em;*/
+	opacity: .9;
+	}
+	
+	.active [role="promo"]{
+		filter:blur(3px)
+	}
+		
 
 /*----------------Global Styles------------------*/
 .notamember{
@@ -136,77 +174,92 @@ Date: 11/6/12
 .membercontent{
 	text-align: center;
 }
+
+.navbtn{
+	background: url(../img/menu.png) no-repeat;
+	width: 40px;
+	height: 36px;
+	float: right;
+	border: none;
+	display: none;
+	text-indent: -9999px;
+}
+
+.navbtn a{
+	text-indent: -9999px;
+	width: 40px;
+	height: 36px;
+	display: block;
+}
+
 /*----------------Home Styles------------------*/
 .tagLine{
-	font-size: 1.5em;
+	font-size: 2.5em;
 	text-align: center;
  }
  
  .subParagraph{
- 	font-size: 1.2em;
+ 	font-size: 1.3em;
  	font-family:Greyscale-Basic;
- 	text-align: center;
- 	padding-top: 2em;
+ 	text-align: left;
+ 	padding-top: .5em;
  	width: 80%;
  	margin: 0 auto;
  }
 
 .textShadow{
-	text-shadow: 2px 2px 5px #141414;
-	filter: dropshadow(color=#141414, offx=2, offy=2);
+	text-shadow: 4px 1px 2px rgba(27, 7, 2, 1);
 	font-weight: bold;
 	font-family: Luxi-Sans;
-}
-
-.number{
-	font-size: 3.5em;
-	position: relative;
-	bottom: .3em;
-	padding-left: .5em;
-	font-family: catshop;
 }
 
 .sudggestInput {
 	border-radius: .3em;
 	font-size: 2.5em;
-	width: 60%;
+	width: 80%;
 	background-color: #5e2709;
 	border-color: #582408;
 }
 
 .promoContent{
-width: 40%;	
-float: left;
-padding-top: 6.5em;
-margin-left: 8em;
+width: 60%;	
+padding-top: 2em;
+padding-bottom: 5em;
+margin: 0 auto;
 }
 
-.posInput{
-	width: 40%;
-	float: right;
-}
 .posInput ul span{
-	font-size: 5em; 
+	font-size: 3em; 
 	position: relative; 
-	right: .5em; 
-	top: .2em;
+	right: .1em; 
+	top: .1em;
+	color: #300d01;
+text-shadow: -2px -2px #250e02;	
 }
+
+.btnPos{
+	width: 12em;
+	margin:  1.5em auto;
+}
+
 
 .findBtn{
-	background: #e77c2d; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #e77c2d 0%, #efa636 50%, #eaaa4f 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e77c2d), color-stop(50%,#efa636), color-stop(100%,#eaaa4f)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #e77c2d 0%,#efa636 50%,#eaaa4f 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e77c2d', endColorstr='#eaaa4f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #e99d4a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e99d4a 45%, #e57d40 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#e99d4a), color-stop(100%,#e57d40)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e99d4a 45%,#e57d40 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 */
 	border: #c9480f;
 	border-radius: .1em;
-	width: 50%;
-	font-size: 2.5em;
-	margin: .5em 0  1em 1.7em;
+	padding: .3em .5em;
+	font-size: 2em;
+	color: #ffffff;
+	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1)
 }
+
 
 .section{
 	background: #2f0c02;
@@ -216,8 +269,7 @@ margin-left: 8em;
 .reasons h3{
 	font-size: 2em;
 	font-family: Luxi-Sans;
-	text-shadow: 2px 2px 5px #141414;
-	filter: dropshadow(color=#141414, offx=2, offy=2);
+	text-shadow: 3px 0px 2px rgba(27, 7, 2, 1);
 }
 
 .reasons p{
@@ -239,7 +291,7 @@ margin-left: 8em;
 }
 
 #register .titles{
-	width: 30%;
+	width: 10em;
 }
 
 .fields{
@@ -249,8 +301,7 @@ margin-left: 8em;
 .fields input{
 	border-radius: .2em;
 	width: 60%;
-	
-	}
+}
 
 .colorized{
 	background-color: #5e2709;
@@ -262,8 +313,8 @@ margin-left: 8em;
 	margin: 0 auto;
 }
 
-#register .twoCol{
-	width: 30%;
+#register .fields input{
+	width: 40%;
 }
 
 .file{
@@ -295,55 +346,50 @@ footer li{
 @media screen and (max-width: 1024px) {
 	.promoContent{
 	padding-top: 3.5em;
+	width: 90%;
 	}
 	
 	.findBtn{
 		font-size: 2em;
 		margin-left: 2em;
 	}
-	
-	#register .titles{
-		width: 60%;
-	}
-	
-	#register .twoCol{
-		width: 50%;
-	}
-	
-	#register .fields input{
-		width: 56%;
-	}
-
-	
+		
 }
-@media screen and (max-width: 768px) {
-	.container{
-		padding-top: 4em;
+
+@media screen and (max-width:870px){
+	#mainNav{
+		display: none;
 	}
+	.navbtn{
+		display: inline-block;
+	}
+}
+
+@media all and (min-width: 870px) { 
+	menu-button, .sidebar-button {
+	 	display: none; 
+	 }
+	 
+  .hide-extras [role="complementary"] { 
+  	display: none; 
+  	}
+}  
+
+
+@media screen and (max-width: 768px) {
+	
 	.promoContent{
 	padding-top: 3.5em;
-	margin-left: 4em;
 	}
 	
 	.twoCol{
 		width: 70%;
 	}
 	
-	#register .fields input{
-		width: 56%;
-	}
 }
 
 @media screen and (max-width: 640px) {
-	.container{
-		padding-top: 6em;
-	}
-	.promoContent{
-	margin-left: 2em;
-	}
-	nav{
-		font-size: .9em;
-	}
+	
 	.findBtn{
 		font-size: 2em;
 		width: 80%;
@@ -359,11 +405,10 @@ footer li{
 		border: none;	
 		width: 100%;
 	}
-	footer a{
-	display: block;
-	}
+	
 	footer li{
 		padding: 0;
+		display: block;
 	}
 
 	.titles{
@@ -373,17 +418,13 @@ footer li{
 	#register .twoCol{
 		width: 80%;
 	}
+	
 	#register .titles{
-		width: 30%;
+		width: 7em;
 	}
 	
 }
 @media screen and (max-width: 480px){
-	nav{
-		font-size: 1em;
-		width: 80%;
-		text-align: center;
-	}
 	
 	.promoContent{
 	clear: both;
@@ -408,25 +449,32 @@ footer li{
 	}
 	
 	#register .twoCol{
-		width: 90%;
+		width: 100%;
 	}
 	#register .titles{
-		width: 30%;
+		width: 7em;
+	}
+	
+	.active [role="complementary"] { 
+		right: 20em;
 	}
 
 }	
 
 	@media screen and (max-width: 320px){
-		nav li {
-			display: block;
+		#headerContent{
+			width: 80%;
 		}
 		
-		nav{
-			padding-top: 1.5em;	
+		#logo{
+			background-size: 150px 50px;  	
+			height: 50px;
+			width: 150px;
 		}
 		
-		.container{
-			padding-top: 11em;
+		#logo a{
+			height: 50px;
+			width: 150px;
 		}
 		
 		.promoContent{
@@ -452,16 +500,15 @@ footer li{
 		.titles{
 			margin-right: 1.0em;
 		}
-		
 		#register .twoCol{
-			width: 98%;
-		}
-		#register .titles{
-			width: 45%;
-		}
-		#register .fields input{
-			width: 40%;
+			width: 100%;
 		}
 		
+		#register .titles{
+			width: 6em;
+		}
+		
+		.active [role="complementary"] { 
+			right: 15em;
+		}
 }
-

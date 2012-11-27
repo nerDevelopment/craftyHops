@@ -1,0 +1,32 @@
+[role="complementary"], [role="main"] {
+	width: 100%; 
+	padding: 0 15px; 
+	display: block; 
+	position: relative; 
+	z-index: 1; 
+	-webkit-transition: 0.25s all ease-in; 
+	-moz-transition: 0.25s all ease-in; 
+	-o-transition: 0.25s all ease-in; 
+	transition: 0.25s all ease-in; 
+}
+
+[role="complementary"] { 
+	margin-left: -100%;
+	width: 80%; 
+	float: left; 
+	z-index: 2; 
+}
+
+.active [role="complementary"] { 
+	margin-left: 0; 
+}
+
+@media all and (min-width: 768px) { 
+	menu-button, .sidebar-button {
+	 	display: none; 
+	 }
+
+  .hide-extras [role="complementary"] { 
+  	display: none; 
+  	}
+}  
