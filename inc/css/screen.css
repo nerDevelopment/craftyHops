@@ -23,6 +23,10 @@ Date: 11/6/12
 	  	overflow-x: hidden;
 	  }
 	  
+	  body{
+	  	overflow-x: hidden;
+	  }
+	  
 	  .container {
 	      width: 100%;
 	      margin: 0 auto;	  
@@ -49,7 +53,17 @@ Date: 11/6/12
 	.clear{
 		clear: both;
 	}	
-		
+	
+	.sideImg{
+		float: left;
+	}
+	
+	body, img {
+	  -moz-user-select: none;
+	  -webkit-user-select: none;
+	  -webkit-user-drag: none;
+	}
+			
 /*----------------Header  and navigation Styles------------------*/
 
 	header{
@@ -127,7 +141,7 @@ Date: 11/6/12
 	
 	[role="complementary"] { 
 		width: 30%; 
-		margin-right: -100%;
+		margin-right: -35%;
 		float: right; 
 		z-index: 2; 
 		height: 65em;
@@ -255,10 +269,12 @@ text-shadow: -2px -2px #250e02;
 }
 
 .reasons p{
-	width: 80%;
+	width: 50%;
 	padding-right: 1.5em;
 	border-right: 1px inset #411a0a ;
 	height: 10em;
+	float: right;
+	
 }
 /*----------------Form Styles------------------*/
 
@@ -392,8 +408,8 @@ footer li{
 	
 	.reasons p{
 		border: none;	
-		width: 100%;
-		height: 6em;
+		width: 70%;
+		height: 15em;
 	}
 	
 	footer li{
@@ -456,6 +472,8 @@ footer li{
 	
 	[role="complementary"] { 
 		width: 35%; 
+		margin-right: -45%;
+		
 	}	
 	.active .container{
 		width: 55%;
@@ -497,7 +515,7 @@ footer li{
 		
 		.reasons p{
 			border: none;	
-			height: 8.5em;
+			width: 50%;
 		}
 		
 		
@@ -514,6 +532,7 @@ footer li{
 		
 		[role="complementary"] { 
 			width: 60%; 
+			margin-right: -70%;
 		}	
 		
 		.active .container{

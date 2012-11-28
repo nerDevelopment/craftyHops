@@ -1,19 +1,50 @@
 @media screen and (max-device-width: 480px){
-	#headerContent{
-		width: 80%;
+	body {
+	overflow-x:hidden;
 	}
-	#mainNav{
-		display: none;
-	}
-	.navbtn{
-		display: inline-block;
-	}
-	
-	#sidenav{
-		display: inline-block;
-
-	}
-	
-	
-	
+	.tagLine{
+		font-size: 3.5em;
+	 }	
+	 
+	 .subParagraph{
+	 	font-size: 1.8em;
+	 	}
+	 	
+	 	.navbtn{
+			background-size: 80px 80px;  	
+			width: 80px;
+			height: 80px;
+			position: relative;
+			bottom: 1em;
+			left: 1em;
+	 	}
+	 	
+	 	.navbtn a{
+	 		width: 80px;
+	 		height: 80px;
+	 	}
+	 	
+	 	#sidenav li a{
+	 		font-size: 2.5em;
+	 		height: 30em;
+	 		position: relative;
+	 		right: .3em;
+	 	}	
+	 	#sidenav li{
+	 		padding-top: 1.5em;
+	 	}
+	 	
+	 	[role="complementary"] { 
+	 		margin-right: -50%;
+	 	}	
+	 	
+	 	 	
+	 	[role="complementary"], [role="main"] {
+	 		width: 40%; 
+	 	}	
+	 	
+	 	.active .container{
+	 		width: 55%;
+	 	}
+	 	
 }
