@@ -1,68 +1,19 @@
 @media screen and (max-device-width: 480px){
-	nav{
-		font-size: 1.5em;
-		width: 96%;
-		padding: 1em 0;
+	#headerContent{
+		width: 80%;
 	}
+	#mainNav{
+		display: none;
+	}
+	.navbtn{
+		display: inline-block;
+	}
+	
+	#sidenav{
+		display: inline-block;
 
-
-	header{
-		padding-bottom: 10em;
 	}
 	
-	.promoContent{
-	clear: both;
-	width: 75%;
-	}
 	
-	.tagLine{
-		font-size: 3em;
-	 }
-	 .subParagraph{
-	 	font-size: 2em;
-	 	padding-top: 1em;
-	 	width: 70%;
-	 	margin: 0 auto;
-	 }
-	 
-	 .posInput{
-	 	width: 80%;
-	 	clear: both;
-	 }
-	 
-	 .findBtn{
-	 	font-size: 3em;
-	 	width: 60%;
-	 	margin-left: 1.2em;
-	 	margin-top: 1em;
-	 }
-	 
-	.section{
-		width: 100%;
-	}
 	
-	.reasons h3{
-		font-size: 3.2em;
-	}
-	
-	.reasons p{
-		font-size: 1.5em;	
-		height: 11em;
-	}
-	.notamember p{
-		font-size: 3em;
-		text-align: center;
-	}
-	.titles{
-		font-size: 3em;
-		margin-right: 1.5em;
-	}
-	.fields input{
-		width: 70%;
-		font-size: 3em;
-	}
-		
-	.twoCol{
-		width: 90%;
-		}	
 }

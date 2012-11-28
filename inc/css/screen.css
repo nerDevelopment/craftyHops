@@ -11,26 +11,7 @@ Date: 11/6/12
 */
 
 /*----------------Fonts----------------------------*/
-@font-face {
-    font-family: 'catshop';
-    src: url('../fonts/catShop/catshop-webfont.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Luxi-Sans';
-    src: url('../fonts/Luxi-Sans/luxisb-webfont.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Greyscale-Basic';
-    src: url('../fonts/Greyscale-Basic/Greyscale_Basic_Bold-webfont.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 /*----------------General Styles------------------*/
 	html { 
   	background: url(../img/bg.png) ; 
@@ -39,11 +20,16 @@ Date: 11/6/12
 	  	-o-background-size: cover;
 	  	background-size: cover;*/
 	  	color: #f0ece9;
+	  	overflow-x: hidden;
 	  }
 	  
 	  .container {
 	      width: 100%;
-	      margin: 0 auto;
+	      margin: 0 auto;	  
+	      float: left;    
+	  }
+	  #sidenav{
+	  	float: right;
 	  }
 	  
 	li{
@@ -122,6 +108,7 @@ Date: 11/6/12
 		#sidenav li a{
 			font-size: 1.5em;
 			text-decoration: none;
+			height: 30em;
 		}
 		
 
@@ -135,28 +122,24 @@ Date: 11/6/12
 		-moz-transition: 0.25s all ease-in; 
 		-o-transition: 0.25s all ease-in; 
 		transition: 0.25s all ease-in; 
-		background: #270f02;
+		background: url('../img/wild_oliva.png');
 	}
 	
 	[role="complementary"] { 
-		width: 80%; 
+		width: 30%; 
 		margin-right: -100%;
 		float: right; 
 		z-index: 2; 
+		height: 65em;
 	}
 	
 	.active [role="complementary"] { 
-		/*margin-left: 100%; */
-		position: relative;
-		right: 30em;
-	/*margin-right: 30em;*/
-	opacity: .9;
+		margin-right: -1%;
 	}
 	
-	.active [role="promo"]{
-		filter:blur(3px)
+	.active .container{
+		width: 65%;
 	}
-		
 
 /*----------------Global Styles------------------*/
 .notamember{
@@ -229,16 +212,15 @@ margin: 0 auto;
 }
 
 .posInput ul span{
-	font-size: 3em; 
+	font-size: 2em; 
 	position: relative; 
 	right: .1em; 
-	top: .1em;
 	color: #300d01;
 text-shadow: -2px -2px #250e02;	
 }
 
 .btnPos{
-	width: 12em;
+	width: 14em;
 	margin:  1.5em auto;
 }
 
@@ -254,7 +236,7 @@ text-shadow: -2px -2px #250e02;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 */
 	border: #c9480f;
 	border-radius: .1em;
-	padding: .3em .5em;
+	padding: .3em 1em;
 	font-size: 2em;
 	color: #ffffff;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1)
@@ -349,14 +331,13 @@ footer li{
 	width: 90%;
 	}
 	
-	.findBtn{
-		font-size: 2em;
-		margin-left: 2em;
+	.btnPos{
+		width: 15em;
 	}
 		
 }
 
-@media screen and (max-width:870px){
+@media screen and (max-width:1024px){
 	#mainNav{
 		display: none;
 	}
@@ -365,7 +346,7 @@ footer li{
 	}
 }
 
-@media all and (min-width: 870px) { 
+@media all and (min-width: 1024px) { 
 	menu-button, .sidebar-button {
 	 	display: none; 
 	 }
@@ -386,6 +367,14 @@ footer li{
 		width: 70%;
 	}
 	
+	.findBtn{
+		width: 7em;
+	}
+	.btnPos{
+		width: 14em;
+	}
+
+	
 }
 
 @media screen and (max-width: 640px) {
@@ -397,13 +386,14 @@ footer li{
 	}
 	
 	.reasons{
-		width: 40%;
+		width: 70%;
 		margin:  0 auto;
 	}
 	
 	.reasons p{
 		border: none;	
 		width: 100%;
+		height: 6em;
 	}
 	
 	footer li{
@@ -423,21 +413,30 @@ footer li{
 		width: 7em;
 	}
 	
-}
-@media screen and (max-width: 480px){
-	
-	.promoContent{
-	clear: both;
-	width: 90%;
-	}
-	
-	.posInput{
-		clear: both;
-		width: 80%;
+	.grid-4  li{
+		margin-left: .5em;
+		margin-top: 1em;
 	}
 	
 	.findBtn{
-		width: 70%;
+		width: 7em;
+	}
+	.btnPos{
+		width: 17em;
+	}
+	
+	.subParagraph{
+		width: 90%;
+	}
+	
+	.promoContent {
+		padding-bottom: 1em;
+	}
+	
+}
+@media screen and (max-width: 480px){
+	.findBtn{
+		width: 7em;
 	}
 	
 	.twoCol{
@@ -455,10 +454,13 @@ footer li{
 		width: 7em;
 	}
 	
-	.active [role="complementary"] { 
-		right: 20em;
+	[role="complementary"] { 
+		width: 35%; 
+	}	
+	.active .container{
+		width: 55%;
 	}
-
+	
 }	
 
 	@media screen and (max-width: 320px){
@@ -478,14 +480,14 @@ footer li{
 		}
 		
 		.promoContent{
-		width: 80%;
+		width: 90%;
 		}
 		
-		.posInput{
-			width: 90%;
-		}
 		.findBtn{
-			width: 70%;
+			width: 7em;
+		}
+		.btnPos{
+			width: 14em;
 		}
 		
 		.reasons{
@@ -495,7 +497,9 @@ footer li{
 		
 		.reasons p{
 			border: none;	
+			height: 8.5em;
 		}
+		
 		
 		.titles{
 			margin-right: 1.0em;
@@ -508,7 +512,11 @@ footer li{
 			width: 6em;
 		}
 		
-		.active [role="complementary"] { 
-			right: 15em;
+		[role="complementary"] { 
+			width: 60%; 
+		}	
+		
+		.active .container{
+			width: 20%;
 		}
 }
