@@ -170,6 +170,10 @@ nav ul{
 	width: 65%;
 }
 
+.active{
+	
+}
+
 /*----------------Global Styles------------------*/
 .notamember{
 	background-color: #a09489;
@@ -223,7 +227,7 @@ nav ul{
 	margin: 0 auto;
 }
 
-.posInput ul span{
+.posInput  span{
 	font-size: 2em; 
 	position: relative; 
 	right: .1em; 
@@ -244,7 +248,7 @@ nav ul{
 	background: -o-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #e99d4a 45%,#e57d40 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 *!/
 	border: #c9480f;
 	border-radius: .1em;
 	padding: .3em 1em;
@@ -421,7 +425,7 @@ footer li{
 		width: 7em;
 	}
 	
-	.grid-4  li{
+	.grid-4  p{
 		margin-left: .5em;
 		margin-top: 1em;
 	}
