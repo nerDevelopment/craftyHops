@@ -13,147 +13,162 @@ Date: 11/6/12
 /*----------------Fonts----------------------------*/
 
 /*----------------General Styles------------------*/
-	html { 
-  	background: url(../img/bg.png) ; 
-	  /*	-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;*/
-	  	color: #f0ece9;
-	  	overflow-x: hidden;
-	  }
+html { 
+	background: url(../img/bg.png) ; 
+	color: #f0ece9;
+	overflow-x: hidden;
+ }
 	  
-	  body{
-	  	overflow-x: hidden;
-	  }
+body{
+	overflow-x: hidden;
+}
 	  
-	  .container {
-	      width: 100%;
-	      margin: 0 auto;	  
-	      float: left;    
-	  }
-	  #sidenav{
-	  	float: right;
-	  }
+.container {
+	width: 100%;
+	margin: 0 auto;	  
+	float: left;    
+}
+
+#sidenav{
+	float: right;
+}
 	  
-	li{
-		list-style-type: none;
-	}
+li{
+	list-style-type: none;
+}
 	
-	a{
-		color: #f0ece9;
-	}
+a{
+	color: #f0ece9;
+}
 	  
-	p, h1, form{
+p, h1, form{
 	border: 0; 
 	margin: 0; 
 	padding: 0;
-	}
+}
 
-	.clear{
-		clear: both;
-	}	
+.clear{
+	clear: both;
+}	
 	
-	.sideImg{
-		float: left;
-	}
+.sideImg{
+	float: left;
+}
 	
-	body, img {
-	  -moz-user-select: none;
-	  -webkit-user-select: none;
-	  -webkit-user-drag: none;
+body, img {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
 	}
 			
 /*----------------Header  and navigation Styles------------------*/
-
-	header{
-		padding-bottom: 5em;
-		background-color: #2f0c02;
-	}
+header{
+	padding-bottom: 5em;
+	background-color: #2f0c02;
+}
 	
-	#headerContent{
-		width: 80%;
-		margin:  0 auto;	
-		padding-top: 3em;
-	}
+#headerContent{
+	width: 80%;
+	margin:  0 auto;	
+	padding-top: 3em;
+}
 
-		#logo{
-			background: url(../images/logo.png) no-repeat;
-			height: 63px;
-			width:264px;
-			margin: 0 ;
-			float: left;
-		}
+#logo{
+	background: url(../images/logo.png) no-repeat;
+	height: 63px;
+	width:264px;
+	margin: 0 ;
+	float: left;
+}
 		
-		#logo a{
-			text-indent: -9999px;
-			display: block;
-			height: 63px;
-			width:264px;
-			padding: 0;
-		}
+#logo a{
+	text-indent: -9999px;
+	display: block;
+	height: 63px;
+	width:264px;
+	padding: 0;
+}
 		
-		#logoPos{
-			padding-left: 1.5em;
-		}
-		#mainNav  li a{
-			font-size: 1.5em;
-			font-family: Luxi-Sans;
-			text-decoration: none;
-			letter-spacing: 0.04em;
-			padding: 0;
-		}
-		
-		nav ul{
-			padding: 0;
-			margin: 0;
-		}
-		#mainNav  li{
-			display: inline;
-			padding-right: 1.5em;
-		}
+#logoPos{
+	padding-left: 1.5em;
+}
 
-		#mainNav {
-			float: right;
-			padding-top: 1em;
-			padding-right: 1.5em;
-		}
+#mainNav  li a{
+	font-size: 1.5em;
+	font-family: Luxi-Sans;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+	padding: 0;
+}
 		
-		#sidenav li a{
-			font-size: 1.5em;
-			text-decoration: none;
-			height: 30em;
-		}
-		
+nav ul{
+	padding: 0;
+	margin: 0;
+}
 
-	[role="complementary"], [role="main"] {
-		width: 80%; 
-		padding: 0 15px; 
-		display: block; 
-		position: relative; 
-		z-index: 1; 
-		-webkit-transition: 0.25s all ease-in; 
-		-moz-transition: 0.25s all ease-in; 
-		-o-transition: 0.25s all ease-in; 
-		transition: 0.25s all ease-in; 
-		background: url('../img/wild_oliva.png');
-	}
+#mainNav  li{
+	display: inline;
+	padding-right: 1.5em;
+}
+
+#mainNav {
+	float: right;
+	padding-top: 1em;
+	padding-right: 1.5em;
+}
+		
+#sidenav li a{
+	font-size: 1.5em;
+	text-decoration: none;
+	height: 30em;
+}
+		
+/*--------------------Side bar------------------------*/
+.navbtn{
+	background: url(../img/menu.png) no-repeat;
+	width: 40px;
+	height: 36px;
+	float: right;
+	border: none;
+	display: none;
+	text-indent: -9999px;
+}
+
+.navbtn a{
+	text-indent: -9999px;
+	width: 40px;
+	height: 36px;
+	display: block;
+}
+
+[role="complementary"], [role="main"] {
+	width: 80%; 
+	padding: 0 15px; 
+	display: block; 
+	position: relative; 
+	z-index: 1; 
+	-webkit-transition: 0.25s all ease-in; 
+	-moz-transition: 0.25s all ease-in; 
+	-o-transition: 0.25s all ease-in; 
+	transition: 0.25s all ease-in; 
+	background: url('../img/wild_oliva.png');
+}
 	
-	[role="complementary"] { 
-		width: 30%; 
-		margin-right: -35%;
-		float: right; 
-		z-index: 2; 
-		height: 65em;
-	}
+[role="complementary"] { 
+	width: 30%; 
+	margin-right: -35%;
+	float: right; 
+	z-index: 2; 
+	height: 65em;
+}
 	
-	.active [role="complementary"] { 
-		margin-right: -1%;
-	}
+.active [role="complementary"] { 
+	margin-right: -1%;
+}
 	
-	.active .container{
-		width: 65%;
-	}
+.active .container{
+	width: 65%;
+}
 
 /*----------------Global Styles------------------*/
 .notamember{
@@ -170,23 +185,6 @@ Date: 11/6/12
 
 .membercontent{
 	text-align: center;
-}
-
-.navbtn{
-	background: url(../img/menu.png) no-repeat;
-	width: 40px;
-	height: 36px;
-	float: right;
-	border: none;
-	display: none;
-	text-indent: -9999px;
-}
-
-.navbtn a{
-	text-indent: -9999px;
-	width: 40px;
-	height: 36px;
-	display: block;
 }
 
 /*----------------Home Styles------------------*/
@@ -219,10 +217,10 @@ Date: 11/6/12
 }
 
 .promoContent{
-width: 60%;	
-padding-top: 2em;
-padding-bottom: 5em;
-margin: 0 auto;
+	width: 60%;	
+	padding-top: 2em;
+	padding-bottom: 5em;
+	margin: 0 auto;
 }
 
 .posInput ul span{
@@ -230,14 +228,13 @@ margin: 0 auto;
 	position: relative; 
 	right: .1em; 
 	color: #300d01;
-text-shadow: -2px -2px #250e02;	
+	text-shadow: -2px -2px #250e02;	
 }
 
 .btnPos{
 	width: 14em;
 	margin:  1.5em auto;
 }
-
 
 .findBtn{
 	background: #e99d4a; /* Old browsers */
@@ -256,7 +253,6 @@ text-shadow: -2px -2px #250e02;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1)
 }
 
-
 .section{
 	background: #2f0c02;
 	width: 100%;
@@ -274,8 +270,8 @@ text-shadow: -2px -2px #250e02;
 	border-right: 1px inset #411a0a ;
 	height: 10em;
 	float: right;
-	
 }
+
 /*----------------Form Styles------------------*/
 
 #addBeer li, #register li, #login li{
@@ -340,6 +336,7 @@ footer li{
 	display: inline;
 	padding-right: 3em;
 }
+
 /*----------------Media queries------------------*/
 @media screen and (max-width: 1024px) {
 	.promoContent{
@@ -350,10 +347,10 @@ footer li{
 	.btnPos{
 		width: 15em;
 	}
-		
 }
 
 @media screen and (max-width:1024px){
+
 	#mainNav{
 		display: none;
 	}
@@ -372,9 +369,7 @@ footer li{
   	}
 }  
 
-
 @media screen and (max-width: 768px) {
-	
 	.promoContent{
 	padding-top: 3.5em;
 	}
@@ -389,12 +384,9 @@ footer li{
 	.btnPos{
 		width: 14em;
 	}
-
-	
 }
 
 @media screen and (max-width: 640px) {
-	
 	.findBtn{
 		font-size: 2em;
 		width: 80%;
@@ -448,8 +440,8 @@ footer li{
 	.promoContent {
 		padding-bottom: 1em;
 	}
-	
 }
+
 @media screen and (max-width: 480px){
 	.findBtn{
 		width: 7em;
@@ -473,69 +465,65 @@ footer li{
 	[role="complementary"] { 
 		width: 35%; 
 		margin-right: -45%;
-		
 	}	
+	
 	.active .container{
 		width: 55%;
 	}
-	
 }	
 
-	@media screen and (max-width: 320px){
-		#headerContent{
-			width: 80%;
-		}
+@media screen and (max-width: 320px){
+	#headerContent{
+		width: 80%;
+	}
 		
-		#logo{
-			background-size: 150px 50px;  	
-			height: 50px;
-			width: 150px;
-		}
+	#logo{
+		background-size: 150px 50px;  	
+		height: 50px;
+		width: 150px;
+	}
 		
-		#logo a{
-			height: 50px;
-			width: 150px;
-		}
+	#logo a{
+		height: 50px;
+		width: 150px;
+	}
 		
-		.promoContent{
-		width: 90%;
-		}
+	.promoContent{
+	width: 90%;
+	}
 		
-		.findBtn{
-			width: 7em;
-		}
-		.btnPos{
-			width: 14em;
-		}
+	.findBtn{
+		width: 7em;
+	}
+	
+	.btnPos{
+		width: 14em;
+	}
 		
-		.reasons{
-			width: 80%;
-			margin:  0 auto;
-		}
+	.reasons{
+		width: 80%;
+		margin:  0 auto;
+	}
 		
-		.reasons p{
-			border: none;	
-			width: 50%;
-		}
+	.reasons p{
+		border: none;	
+		width: 50%;
+	}
 		
+	.titles{
+		margin-right: 1.0em;
+	}
 		
-		.titles{
-			margin-right: 1.0em;
-		}
-		#register .twoCol{
-			width: 100%;
-		}
+	#register .titles{
+		width: 6em;
+	}
 		
-		#register .titles{
-			width: 6em;
-		}
+	[role="complementary"] { 
+		width: 60%; 
+		margin-right: -70%;
+	}	
 		
-		[role="complementary"] { 
-			width: 60%; 
-			margin-right: -70%;
-		}	
-		
-		.active .container{
-			width: 20%;
-		}
+	.active .container{
+		width: 20%;
+	}
 }
