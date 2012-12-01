@@ -167,7 +167,7 @@ nav ul{
 }
 	
 .active .container{
-	width: 65%;
+	width: 65%;	
 }
 
 .active{
@@ -248,7 +248,7 @@ nav ul{
 	background: -o-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #e99d4a 45%,#e57d40 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 *!/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 */
 	border: #c9480f;
 	border-radius: .1em;
 	padding: .3em 1em;
@@ -285,7 +285,7 @@ nav ul{
 
 .titles{
 	float: left;
-	width: 15%;
+	width: -1%;
 }
 
 #register .titles{
@@ -331,9 +331,14 @@ nav ul{
 
 /*----------------Footer Styles------------------*/
 
+footer{
+	clear: both;
+}
+
 footer a{
 	text-decoration: underline;
 	display: inline;
+	padding-top: 1em;
 }
 
 footer li{
@@ -350,6 +355,14 @@ footer li{
 	
 	.btnPos{
 		width: 15em;
+	}
+	
+	.twoCol{
+		width: 60%;
+	}
+		
+	.active #register .titles{
+		width: 6em;
 	}
 }
 
@@ -473,6 +486,22 @@ footer li{
 	
 	.active .container{
 		width: 55%;
+	}
+	
+	.active .twoCol{
+		width: 100%;
+	}
+		
+	.active #register .titles{
+		width: 6em;
+	}
+	
+	.active #register .fields input{
+		width: 30%;
+	}
+	
+	.active .titles{
+		margin: 0;
 	}
 }	
 

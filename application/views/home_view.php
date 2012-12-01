@@ -20,8 +20,9 @@
 	<link rel="stylesheet" href="../../inc/css/screen.css"/>
 	<link rel="stylesheet" href="../../inc/css/mobile.css"/>		
 		
-<!--  ====================	Google js ====================	-->	
+<!--  ====================	Google and modenizer js ====================	-->	
 	<script  src="../../inc/js/google.js" type="text/javascript"></script>
+	<script src="../../inc/js/modernizr.js" type="text/javascript"></script>
 <!--  ====================	ie exception sheets ====================	-->
 	<!--[if lte IE 6]>
 		<![endif]-->	
@@ -38,10 +39,11 @@
 				</div> <!--  end logoPos  -->
 				<nav id="mainNav">
 					<ul>
-		    				<li><a href="#">Favorites</a></li>
-		    				<li><?php echo anchor('/index.php/welcome/addbeer', 'Add a Beer', 'class="addForm"') ?></li>
-		    				<li><?php echo anchor('/index.php/welcome/login', 'Login', 'class="login"') ?></li>
-		    				<li><?php echo anchor('/index.php/welcome/register', 'Register', 'class="register"') ?></li>
+		    				<li><a href="#home" class="navHome">Home</a></li>
+		    				<li><a href="#favorite" class="navFavorite">Favorite</a></li>
+		    				<li><a href="#addbeer" class="navAddbeer">Add a Beer</a></li>
+		    				<li><a href="#login" class="navLogin">Login</a></li>
+		    				<li><a href="#register" class="navRegister">Register</a></li>
 		    			</ul>
 		    		</nav>
   			  <a class='navbtn' id="navbtn" href="#" >Menu</a>  			  
@@ -50,18 +52,22 @@
 		
 		<section id="sidenav" role="complementary">
 				<ul>
-						<li><a href="#">Favorites</a></li>
-						<li><?php echo anchor('/index.php/welcome/addbeer', 'Add a Beer', 'class="addForm"') ?></li>
-						<li><?php echo anchor('/index.php/welcome/login', 'Login', 'class="login"') ?></li>
-						<li><?php echo anchor('/index.php/welcome/register', 'Register', 'class="register"') ?></li>
-					</ul>
+					<li><a href="#home" class="navHome">Home</a></li>
+					<li><a href="#favorite" class="navFavorite">Favorite</a></li>
+					<li><a href="#addbeer" class="navAddbeer">Add a Beer</a></li>
+					<li><a href="#login" class="navLogin">Login</a></li>
+					<li><a href="#register" class="navRegister">Register</a></li>
+				</ul>
 		</section>
-<!--  ====================	Main Content ====================	-->			
-		<div class="container">
-			<div class="promoContent">
-				<p class="tagLine"><span class="textShadow">What are your top three favorite beers?</span></p>
-				<p class="subParagraph">Find your <span class="textShadow">Craft Beer</span> in seconds, with just one question. Just fill in the three boxes and click to <span class="textShadow">find</span> your beer!  It’s as <span class="textShadow">simple</span> as that!</p>
-			</div><!--  end promoContent  -->
+<!--  ====================  Content ====================	-->
+
+<!--  ====================  Home page ====================	-->
+		<article id="home">
+			<div class="container">
+				<div class="promoContent">
+					<p class="tagLine"><span class="textShadow">What are your top three favorite beers?</span></p>
+					<p class="subParagraph">Find your <span class="textShadow">Craft Beer</span> in seconds, with just one question. Just fill in the three boxes and click to <span class="textShadow">find</span> your beer!  It’s as <span class="textShadow">simple</span> as that!</p>
+				</div><!--  end promoContent  -->
 			
 			<div class="posInput">
 				<form method="post" action="#">
@@ -102,27 +108,126 @@
 		  	 	  		<div class="grid-4">
 		  	 	  			<h3>SOCIALIZE.</h3>
 		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />		
-		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experence by writing a review, voting up a review, or ading a Craft beer to our collection.</p>
+		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experence by writing a review, voting up a review, or adding a Craft beer to our collection.</p>
 		  	 	  			<div class="clear"></div>
 		  	 	  		</div><!--  end grid-4  -->
 		  	 	  	</div><!--  end grids and reasons  -->
 		  	 	  </div><!--  end wrap  -->
-			</div><!--  end section  -->
+				</div><!--  end section  -->
+			</div><!--  end container  -->
+		</article><!--  end home  -->	
 
-	<footer>
-   		<ul>
-   			<li>nerDevelopment — All rights reserved</li>
-   			<li><a href="#">Terms and Conditions</a></li>
-   			<li><a href="#">Contact Us</a></li>
-   		</ul>
-   	</footer>
+<!--  ====================  Favorite page ====================	-->
+
+		<article id="favorite">
+			<p>favorite</p>
+		</article><!--  end favorite  -->
+
+<!--  ====================  Add beer page ====================	-->
+		<article id="addBeer">
+			<div class="container">
+				<div class="notamember"  style="display: none;">
+					<p >Please make sure you are logged in to view this feature!</p>
+				</div><!--  end notamember  -->
+					
+				<div class="membercontent">
+					<div id="addForm" class="stylized">
+						<form id="addBeer" name="form" method="post" action="#">
+							<h2>Add a Beer</h2>
+							<div class="twoCol">
+								<ul class="fields">
+									<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" /></li>
+									<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
+									<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized"/></li>
+									<li><span class="titles">File:</span><input type="file" class="file" name="beerimage"  /></li>
+									<li><input type="submit"  value="Add" class="submit"/></li>
+									
+								</ul><!--  end fields  -->
+							</div><!--  end twoCol  -->
+						</form>
+					</div><!--  end addForm  -->
+				</div><!--  end membercontent  -->
+			 </div><!--  end container  -->	 	
+		</article><!--  end addBeer page -->	
+			
+<!--  ====================  Login page ====================	-->
+			
+		
+		<article id="login">
+			<div class="container">
+				<div class="notamember"  style="display: none;">
+					<p >Please make sure you are logged in to view this feature!</p>
+				</div><!--  end notamember  -->
+				
+				<div class="membercontent">
+					<div id="loginForm" class="stylized">
+						<form id="login" name="form" method="post" action="#">
+						<div class="twoCol">
+							<ul class="fields">
+								<li class="fbbutton"><a id="fbloginbtn" href="#">Facebook</a></li>
+							</ul>		
+							
+							<div class="clear"></div>
+									
+							<h2 id="or">Or</h2>
+							
+							<h2>Login</h2>
+									
+							<ul class="fields">
+								<li><span class="titles">Email:</span><input type="text" name="logemail" id="logemail" class="colorized"/></li>
+								<li><span  class="titles">Password:</span><input type="text" name="logpass" id="logpass" class="colorized"/></li>
+								<li><input type="submit"  value="Register" class="submit"/></li>
+							</ul>
+									
+							<div class="clear"></div>							
+						</div><!--  end twoCol  -->	
+						</form>
+					</div><!--  end loginForm  -->
+				</div><!--  end membercontent  -->
+			</div><!--  end container  -->
+		</article><!--  end login page  -->
+		
+<!--  ====================  Register page ====================	-->
+		<article id="register">
+			<div class="container">
+				<div class="notamember"  style="display: none;">
+					<p >Please make sure you are logged in to view this feature!</p>
+				</div><!--  end notamember  -->
+					
+				<div class="membercontent">
+					<div id="registerForm" class="stylized">
+						<form id="register" name="form" method="post" action="#">
+							<h2>Register</h2>
+							<div class="twoCol">
+								<ul class="fields">
+									<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized"/></li>
+									<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized"/></li>
+									<li>	<span class="titles">Age:</span><input type="text" name="age" class="colorized" id="age" /></li>								
+									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" /></li>
+									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" /></li>
+									<li>	<span class="titles">Password:</span><input type="text" name="email" class="colorized" id="repass" /></li>
+									<li><input type="submit"  value="Register" class="submit"/></li>
+								</ul>
+							</div><!--  end twoCol  -->	
+						</form>
+					</div><!--  end registrationForm  -->
+				</div><!--  end membercontent  -->
+			</div><!--  end container  -->
+		</article><!--  end register page  -->
+		
+<!--  ====================  Footer page ====================	-->
+	
+		<footer>
+	   		<ul>
+	   			<li>nerDevelopment — All rights reserved</li>
+	   			<li><a href="#">Terms and Conditions</a></li>
+	   			<li><a href="#">Contact Us</a></li>
+	   		</ul>
+	   	</footer>
    	
-  </div><!--  end container  -->
 
 <!--  ====================	Jquery and facebook ====================	-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
   		<script src="../inc/js/main.js" type="text/javascript"></script>
-  
-
 	</body>
 </html>

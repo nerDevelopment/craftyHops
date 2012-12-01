@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'craftyhopscom.ipagemysql.com';
 $db['default']['username'] = 'crafty_hops22';
-$db['default']['password'] = 'nerd.dev';
+$db['default']['password'] = 'ner.Dev22';
 $db['default']['database'] = 'crafty_hops22';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

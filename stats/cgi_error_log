@@ -6,3 +6,27 @@ PHP Fatal error:  require_once(): Failed opening required '/hermes/bosoraweb013/
 PHP Warning:  require_once(/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php): failed to open stream: No such file or directory in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
 PHP Fatal error:  require_once(): Failed opening required '/hermes/bosoraweb013/b1105/ipg.craftyhopscom/system/core/CodeIgniter.php' (include_path='.:/usr/local/lib/php-5.3.13/lib/php') in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/index.php on line 202
 
+20121201T143025: crafty-hops.com/index.php/Users
+PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/models/users_model.php on line 12
+
+20121201T143033: crafty-hops.com/index.php/welcome/login
+PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/models/users_model.php on line 12
+
+20121201T143114: crafty-hops.com/index.php/Users
+PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/models/users_model.php on line 12
+
+20121201T143446: crafty-hops.com/index.php/Users
+PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/models/users_model.php on line 12
+
+20121201T143954: crafty-hops.com/index.php/
+PHP Fatal error:  Call to undefined method Home::is_logged_in() in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/controllers/home.php on line 9
+
+20121201T144008: crafty-hops.com/index.php/
+PHP Fatal error:  Call to undefined method Home::is_logged_in() in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/controllers/home.php on line 9
+
+20121201T144012: crafty-hops.com/index.php
+PHP Fatal error:  Call to undefined method Home::is_logged_in() in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/controllers/home.php on line 9
+
+20121201T144029: crafty-hops.com/index.php
+PHP Fatal error:  Cannot redeclare Home::index() in /hermes/bosoraweb013/b1105/ipg.craftyhopscom/application/controllers/home.php on line 16
+

@@ -1,44 +1,72 @@
 $(document).ready(function(){
-FB.init({
-    appId  : '259142727536738',
-    status : true, // check login status
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml  : true, // parse XFBML
-    oauth  : true // enable OAuth 2.0
-  });
-  
-loginFace = function(){
-	if(hasRun){
-		return false;
-	}else{
-		hasRun = true;
-	};
-	FB.api('/me', function(response) {
-
-		localStorage.setItem('fb_me', JSON.stringify(response));
-		console.log('**User Info stored locally', response);
-	});
-	FB.api('/me/photos', function(response) {
+	if (Modernizr.localstorage) {
+	FB.init({
+		appId  : '193624530762471',
+		status : true, // check login status
+		cookie : true, // enable cookies to allow the server to access the session
+	    	xfbml  : true, // parse XFBML
+	    	oauth  : true // enable OAuth 2.0
+	  });
 	  
-	 	localStorage.setItem('fb_friends', JSON.stringify(response));
-	 	console.log('**Friends Info stored locally', response);
-	});
-	$.mobile.changePage('#explore');
-	$("#popList").listview('refresh');
-}
+	  FB.getLoginStatus(function(response) {
+	  		console.log("getLoginStatus object:", response)
+	  		console.log("getLoginStatus response:", response.status)
+	  		if (response.status === 'connected') {
+	  			userFbId = response.authResponse.userID;
+	  			accessToken = response.authResponse.accessToken;
+	  		} else if (response.status === 'not_authorized') {
+	  				// not_authorized
+	  				console.log("not_authorized");
+	  		} else {
+	  			// not_logged_in
+	  		}
+	  	});
+	  
+	  	$("#fbloginbtn").on("click", function(){
+	  		
+	  		FB.login(function(response) {
+	  			console.log("FB.login response", response);
+	  			getFbInfo();
+	  				
+	  		});
+	  	});
+	  
+	  	//Get user facebook information and update or add to database
+	  	var getFbInfo = function(){
+	  		console.log("getFbInfo function");
+	  
+	  		FB.api('/me', function(response) {
+	  			userFbId = response.id;
 
-	$(function(){
-		$('#getInfo').click(function() {
-			getInfo();
-		});
-		
-		
-		$('.btnLogout').click(function() {
-			FB.logout(function(response){
-				console.log('user logged out' , response);
-			});
-		});
-			
-	});
-	var hasRun = false;
+	  			console.log('Facebook Info', response);
+	  
+	  				  			
+	  			$.post('../index.php/users_model/addFaceUser',
+	  				{'user_id':response.id,
+	  				'firstName':response.first_name,
+	  				 'lastName':response.last_name,
+	  				 'email':response.email
+	  				},function(response){
+	  					console.log("added to database", response);
+	  					window.location = 'http://www.crafty-hops.com';
+	  				}
+	  			);
+	  		});
+	  
+
+	  		console.log("getProPic function");
+	  		FB.api('/me/picture', function(response){
+	 	  		console.log("picture", response)	
+//	 	  		$.post('../index.php/Members/addFbImageURL',
+//	  			{'url':response.data.url,
+//	  			},function(response){
+//	  				console.log("FB IMAGE Response line 198::", response);
+//	  			}
+//	  			);
+	  		});
+	  
+	  	};
+	  
+	  
+	 } 
 });
