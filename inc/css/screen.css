@@ -98,8 +98,8 @@ header{
 
 #logo{
 	background: url(../img/logo.png) no-repeat;
-	height: 63px;
-	width: 264px;
+	height: 265px;
+	width: 258px;
 	margin: 0 ;
 	float: left;
 }
@@ -107,13 +107,14 @@ header{
 #logo a{
 	text-indent: -9999px;
 	display: block;
-	height: 63px;
-	width:264px;
+	height: 265px;
+	width:258px;
 	padding: 0;
 }
 		
 #logoPos{
-	padding-left: 1.5em;
+	padding-left: 4.0em;
+	position: absolute;
 }
 
 #mainNav  li a{
@@ -282,16 +283,19 @@ nav ul{
 	float: right;
 }
 
-/*-------------------------------FORM------------------------------*/
-
+/*-------------------------------FORMS------------------------------*/
 #addBeer li, #register li, #login li{
 	margin-bottom: 1em;
 	font-size: 1.3em;
 }
 
+#addBeer p{
+	text-align: left;
+}
+
 .titles{
 	float: left;
-	width: -1%;
+	width: 6em;
 }
 
 #register .titles{
@@ -300,6 +304,7 @@ nav ul{
 
 .fields{
 	float: right;
+	margin-top: 5em;
 }
 
 .fields input{
@@ -310,11 +315,6 @@ nav ul{
 .colorized{
 	background-color: #5e2709;
 	border-color: #582408;
-}
-
-.twoCol{
-	width: 40%;
-	margin: 0 auto;
 }
 
 #register .fields input{
@@ -333,6 +333,11 @@ nav ul{
 .fbbutton{
 	position: relative;
 	right: 8.5em;
+}
+
+.info p:last-child{
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 /*----------------------------------------FOOTER--------------------------------------*/
@@ -354,6 +359,10 @@ footer li{
 
 /*--------------------------------------------MEDIA QUERIES---------------------------------*/
 @media screen and (max-width: 1024px) {
+	.container{
+		padding-top: 5em;	
+	}
+	
 	.promoContent{
 	padding-top: 3.5em;
 	width: 90%;
@@ -363,12 +372,13 @@ footer li{
 		width: 15em;
 	}
 	
-	.twoCol{
-		width: 60%;
-	}
-		
+
 	.active #register .titles{
 		width: 6em;
+	}
+	
+	#addBeer .container{
+		padding-top: 6em;
 	}
 }
 
@@ -397,15 +407,31 @@ footer li{
 	padding-top: 3.5em;
 	}
 	
-	.twoCol{
-		width: 70%;
-	}
-	
 	.findBtn{
 		width: 7em;
 	}
+	
 	.btnPos{
 		width: 14em;
+	}
+	
+	.fields input {
+	width: 55%;
+	}
+	
+	#logo{
+		background-size: 225px 218px;  	
+		height:225px ;
+		width: 218px;
+	}
+		
+	#logo a{
+		height:225px ;
+		width: 218px;
+	}
+	
+	#addBeer .container{
+		padding-top: 4em;
 	}
 }
 
@@ -435,10 +461,7 @@ footer li{
 	.titles{
 		margin-right: 1.5em;
 	}
-	
-	#register .twoCol{
-		width: 80%;
-	}
+
 	
 	#register .titles{
 		width: 7em;
@@ -463,24 +486,43 @@ footer li{
 	.promoContent {
 		padding-bottom: 1em;
 	}
+	
+	.container{
+		padding-top: 1em;
+	}
+	
+	#logo{
+		background-size: 185px 178px;  	
+		height:185px ;
+		width: 178px;
+	}
+		
+	#logo a{
+		height:185px ;
+		width: 178px;
+	}
+	#addBeer .container{
+		padding-top: 2em;
+	}
 }
+
+@media screen and (max-width: 609px){
+	.container {
+	width: 98%;
+	}
+}
+
+
 
 @media screen and (max-width: 480px){
 	.findBtn{
 		width: 7em;
 	}
-	
-	.twoCol{
-		width: 90%;
-	}
-	
+
 	.titles{
 		margin-right: 2.0em;
 	}
-	
-	#register .twoCol{
-		width: 100%;
-	}
+
 	#register .titles{
 		width: 7em;
 	}
@@ -493,13 +535,12 @@ footer li{
 	.active .container{
 		width: 55%;
 	}
-	
-	.active .twoCol{
-		width: 100%;
-	}
-		
+
 	.active #register .titles{
 		width: 6em;
+	}
+	.fields{
+		width: 100%;
 	}
 	
 	.active #register .fields input{
@@ -509,22 +550,25 @@ footer li{
 	.active .titles{
 		margin: 0;
 	}
+	
+	#logo{
+		background-size: 185px 178px;  	
+		height:185px ;
+		width: 178px;
+	}
+		
+	#logo a{
+		height:185px ;
+		width: 178px;
+	}
+	#logoPos{
+		padding-left: 2.0em;
+		}
 }	
 
 @media screen and (max-width: 320px){
 	#headerContent{
 		width: 80%;
-	}
-		
-	#logo{
-		background-size: 150px 50px;  	
-		height: 50px;
-		width: 150px;
-	}
-		
-	#logo a{
-		height: 50px;
-		width: 150px;
 	}
 		
 	.promoContent{
@@ -565,4 +609,26 @@ footer li{
 	.active .container{
 		width: 20%;
 	}
+	
+	.fields input{
+		width: 47%;
+	}
+	
+	.fields{
+		width: 108%;
+	}
+	
+	#logo{
+		background-size: 165px 158px;  	
+		height:165px ;
+		width: 158px;
+	}
+		
+	#logo a{
+		height:165px ;
+		width: 158px;
+	}
+	#logoPos{
+		padding-left: 1.0em;
+		}
 }

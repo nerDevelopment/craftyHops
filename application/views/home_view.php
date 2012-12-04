@@ -32,11 +32,10 @@
 
   <body  class="hide-extras">
 <!--  ====================	Header and navigation ====================	-->	
+		
 		<header>
 			<div id="headerContent">
-				<div id="logoPos">
-				<h4 id="logo"><a href="http://www.crafty-hops.com">Crafty Hops</a></h4>
-				</div> <!--  end logoPos  -->
+				
 				<nav id="mainNav">
 					<ul>
 		    				<li><a href="#home" class="navHome">Home</a></li>
@@ -49,6 +48,9 @@
   			  <a class='navbtn' id="navbtn" href="#" >Menu</a>  			  
 			</div><!--  end headerContent  -->
 		</header>
+		<div id="logoPos">
+			<h4 id="logo"><a href="http://www.crafty-hops.com">Crafty Hops</a></h4>
+		</div> <!--  end logoPos  -->
 		
 		<section id="sidenav" role="complementary">
 				<ul>
@@ -132,19 +134,28 @@
 					
 				<div class="membercontent">
 					<div id="addForm" class="stylized">
-						<form id="addBeer" name="form" method="post" action="#">
-							<h2>Add a Beer</h2>
-							<div class="twoCol">
-								<ul class="fields">
-									<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" /></li>
-									<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
-									<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized"/></li>
-									<li><span class="titles">File:</span><input type="file" class="file" name="beerimage"  /></li>
-									<li><input type="submit"  value="Add" class="submit"/></li>
+					
+						<div class="wrap">
+							<div class="grids">
+								<div class="grid-6 info">
+									<h2>Add a Beer</h2>
+									<p>Add a beer to our database and help other users! While we might be amazing in our knowlage, we sadly don't know everything about you local beers. That means that we a little help from YOU by adding beers to our database. This way we can let everyone know about the awesome beers in your area!</p>
 									
-								</ul><!--  end fields  -->
-							</div><!--  end twoCol  -->
-						</form>
+									<p>Please keep in mind that your beer has to go through our moderators just to make sure everything is perfect before it will show up in our database or on the website.</p>
+								</div><!--  end grid-6 -->
+								<div class="grid-6">
+									<form id="addBeer" name="form" method="post" action="#">
+										<ul class="fields">
+											<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" /></li>
+											<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
+											<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized"/></li>
+											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage"  /></li>
+											<li><input type="submit"  value="Add" class="submit"/></li>
+										</ul><!-- end fields  -->
+									</form><!--  end addBeer -->
+								</div><!--  end grid-6 -->
+							</div><!--  end grids  -->
+						</div><!--  end wrap  -->		
 					</div><!--  end addForm  -->
 				</div><!--  end membercontent  -->
 			 </div><!--  end container  -->	 	
@@ -229,5 +240,10 @@
 <!--  ====================	Jquery and facebook ====================	-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
   		<script src="../inc/js/main.js" type="text/javascript"></script>
+  		
+  		<script src="../../inc/js/face.js"></script>	
+  		<div id="fb-root"></div>
+  		
+  		<script src="http://connect.facebook.net/en_US/all.js"></script>
 	</body>
 </html>
