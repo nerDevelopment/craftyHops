@@ -3,6 +3,10 @@ Author:  nerDevelopment
 Project: Crfty Hops
 Date: 12/04/2012
 
+    LAST UPDATE
+Author: Rach
+Time: 6:34 pm
+
     STYLE GUIDE
 HTML background color: #411a0a
 Header background color: #2f0c02
@@ -13,7 +17,7 @@ Crafty Hops - Blackjack
 Quality Tast - Quaver Serif
 Nav - Cubano
 nerDevelopment - Myriad
-Content - Quaver Sans
+Content - Quaver Sans (Letter Spacing = 1px)
 Titles/Headings - Cudano
 --------------------------------------------------------------------------------*/
 
@@ -113,11 +117,11 @@ header{
 }
 		
 #logoPos{
-	padding-left: 4.0em;
+	padding-left: 3.1em;
 	position: absolute;
 }
 
-#mainNav  li a{
+#mainNav li a{
 	font-size: 1.5em;
 	font-family: Cubano, Helvetica, Arial;
 	text-decoration: none;
@@ -194,29 +198,27 @@ nav ul{
 	width: 65%;	
 }
 
-.active{
-	
-}
-
 /*------------------------------HOME PAGE-------------------------------*/
 .tagLine{
-	font-size: 2.5em;
-	text-align: center;
- }
+	font: 2.4em Cubano, Helvetica, Arial;
+	margin: auto;
+	margin-left: 9em;
+	width: 60%;
+}
  
- .subParagraph{
- 	font-size: 1.3em;
- 	font-family:Greyscale-Basic;
- 	text-align: left;
+.subParagraph{
+ 	font: 1.3em "Quaver Sans", Helvetica, Arial;
+ 	letter-spacing: 1px;
+ 	margin: auto;
+ 	margin-left: 16.7em;
  	padding-top: .5em;
- 	width: 80%;
- 	margin: 0 auto;
+ 	text-align: left;
+ 	width: 60%;
  }
 
 .textShadow{
 	text-shadow: 4px 1px 2px rgba(27, 7, 2, 1);
 	font-weight: bold;
-	font-family: Luxi-Sans;
 }
 
 .sudggestInput {
@@ -228,7 +230,6 @@ nav ul{
 }
 
 .promoContent{
-	width: 60%;	
 	padding-top: 2em;
 	padding-bottom: 5em;
 	margin: 0 auto;

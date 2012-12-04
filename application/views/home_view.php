@@ -1,3 +1,12 @@
+<!--  ====================	Information ====================	
+Author:  nerDevelopment
+Project: Crfty Hops
+Date: 12/04/2012
+
+    LAST UPDATE
+Author: Rach
+Time: 6:34 pm
+====================	-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +44,6 @@
 		
 		<header>
 			<div id="headerContent">
-				
 				<nav id="mainNav">
 					<ul>
 		    				<li><a href="#home" class="navHome">Home</a></li>
@@ -68,7 +76,7 @@
 			<div class="container">
 				<div class="promoContent">
 					<p class="tagLine"><span class="textShadow">What are your top three favorite beers?</span></p>
-					<p class="subParagraph">Find your <span class="textShadow">Craft Beer</span> in seconds, with just one question. Just fill in the three boxes and click to <span class="textShadow">find</span> your beer!  It’s as <span class="textShadow">simple</span> as that!</p>
+					<p class="subParagraph"><span class="textShadow">Find your Craft Beer in seconds, with just one question. Just fill in the three boxes and click to find your beer! It’s as simple as that!</span></p>
 				</div><!--  end promoContent  -->
 			
 			<div class="posInput">
@@ -162,8 +170,6 @@
 		</article><!--  end addBeer page -->	
 			
 <!--  ====================  Login page ====================	-->
-			
-		
 		<article id="login">
 			<div class="container">
 				<div class="notamember"  style="display: none;">
