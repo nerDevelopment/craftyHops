@@ -1,19 +1,24 @@
-/*
+/*----------------------------------------INFORMATION------------------------------
 Author:  nerDevelopment
 Project: Crfty Hops
-Date: 11/6/12
-*/
+Date: 12/04/2012
 
-/* Style Guide
-	html background color  #411a0a
-	header background color #2f0c02
-	font color #f0ece9
-*/
+    STYLE GUIDE
+HTML background color: #411a0a
+Header background color: #2f0c02
+Font color: #f0ece9
 
-/*----------------Fonts----------------------------*/
+    FONTS
+Crafty Hops - Blackjack
+Quality Tast - Quaver Serif
+Nav - Cubano
+nerDevelopment - Myriad
+Content - Quaver Sans
+Titles/Headings - Cudano
+--------------------------------------------------------------------------------*/
 
-/*----------------General Styles------------------*/
-html { 
+/*----------------------------GENERAL-----------------------------*/
+html{ 
 	background: url(../img/bg.png) ; 
 	color: #f0ece9;
 	overflow-x: hidden;
@@ -22,15 +27,11 @@ html {
 body{
 	overflow-x: hidden;
 }
-	  
-.container {
-	width: 100%;
-	margin: 0 auto;	  
-	float: left;    
-}
 
-#sidenav{
-	float: right;
+body, img{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
 }
 	  
 li{
@@ -39,6 +40,7 @@ li{
 	
 a{
 	color: #f0ece9;
+	outline: none;
 }
 	  
 p, h1, form{
@@ -54,14 +56,35 @@ p, h1, form{
 .sideImg{
 	float: left;
 }
-	
-body, img {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-webkit-user-drag: none;
-	}
+
+.container{
+	width: 100%;
+	margin: 0 auto;	  
+	float: left;    
+}
+
+#sidenav{
+	float: right;
+}
+
+/*----------------------------------GLOBAL---------------------------*/
+.notamember{
+	background-color: #a09489;
+	width: 50%;
+	margin:  0 auto;
+	border-radius: .3em;
+	padding: .5em;
+}
+.notamember p{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.membercontent{
+	text-align: center;
+}
 			
-/*----------------Header  and navigation Styles------------------*/
+/*---------------------------HEADER & NAV-----------------------------*/
 header{
 	padding-bottom: 5em;
 	background-color: #2f0c02;
@@ -74,9 +97,9 @@ header{
 }
 
 #logo{
-	background: url(../images/logo.png) no-repeat;
+	background: url(../img/logo.png) no-repeat;
 	height: 63px;
-	width:264px;
+	width: 264px;
 	margin: 0 ;
 	float: left;
 }
@@ -95,7 +118,7 @@ header{
 
 #mainNav  li a{
 	font-size: 1.5em;
-	font-family: Luxi-Sans;
+	font-family: Cubano, Helvetica, Arial;
 	text-decoration: none;
 	letter-spacing: 0.04em;
 	padding: 0;
@@ -111,7 +134,7 @@ nav ul{
 	padding-right: 1.5em;
 }
 
-#mainNav {
+#mainNav{
 	float: right;
 	padding-top: 1em;
 	padding-right: 1.5em;
@@ -123,7 +146,7 @@ nav ul{
 	height: 30em;
 }
 		
-/*--------------------Side bar------------------------*/
+/*------------------------------SIDE BAR-----------------------------------*/
 .navbtn{
 	background: url(../img/menu.png) no-repeat;
 	width: 40px;
@@ -174,24 +197,7 @@ nav ul{
 	
 }
 
-/*----------------Global Styles------------------*/
-.notamember{
-	background-color: #a09489;
-	width: 50%;
-	margin:  0 auto;
-	border-radius: .3em;
-	padding: .5em;
-}
-.notamember p{
-	font-size: 1.5em;
-	text-align: center;
-}
-
-.membercontent{
-	text-align: center;
-}
-
-/*----------------Home Styles------------------*/
+/*------------------------------HOME PAGE-------------------------------*/
 .tagLine{
 	font-size: 2.5em;
 	text-align: center;
@@ -276,7 +282,7 @@ nav ul{
 	float: right;
 }
 
-/*----------------Form Styles------------------*/
+/*-------------------------------FORM------------------------------*/
 
 #addBeer li, #register li, #login li{
 	margin-bottom: 1em;
@@ -329,7 +335,7 @@ nav ul{
 	right: 8.5em;
 }
 
-/*----------------Footer Styles------------------*/
+/*----------------------------------------FOOTER--------------------------------------*/
 
 footer{
 	clear: both;
@@ -346,7 +352,7 @@ footer li{
 	padding-right: 3em;
 }
 
-/*----------------Media queries------------------*/
+/*--------------------------------------------MEDIA QUERIES---------------------------------*/
 @media screen and (max-width: 1024px) {
 	.promoContent{
 	padding-top: 3.5em;
