@@ -119,6 +119,7 @@ header{
 
 .circle{
   position: relative;
+  margin: 0 1px 0 1px;
 }
 
 .circle::after{
@@ -131,11 +132,11 @@ header{
   background: -ms-linear-gradient(top,  #e9dcdc 0%,#998c89 99%); /* IE10+ */
   background: linear-gradient(to bottom,  #e9dcdc 0%,#998c89 99%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9dcdc', endColorstr='#998c89',GradientType=0 ); /* IE6-9*/
-  height: 1em;
+  height: .9em;
   border-radius: 5em;
-  width: 1em;
+  width: .9em;
   position: absolute;
-  bottom: 3px;
+  top: 1px;
   right: 1px;
 }
 	
