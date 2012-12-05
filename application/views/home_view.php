@@ -126,7 +126,12 @@ Time: 3:38pm
 				</div><!--  end section  -->
 			</div><!--  end container  -->
 		</article><!--  end home  -->	
-
+<!--  ====================  Suggection page ====================	-->
+	<article id="suggection">
+		<div class="container">
+			<h1>Hello there</h1>
+		</div><!--  end container  -->	
+	</article><!--  end suggection  -->	
 <!--  ====================  Favorite page ====================	-->
 
 		<article id="favorite">

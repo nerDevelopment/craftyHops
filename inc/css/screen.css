@@ -4,8 +4,8 @@ Project: Crfty Hops
 Date: 12/05/2012
 
     LAST UPDATE
-Author: Rach
-Time: 4:31 pm
+Author: Jess
+Time: 5:18 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -247,19 +247,14 @@ nav ul{
 /*------------------------------HOME PAGE-------------------------------*/
 .tagLine{
 	font: 2.4em cubano, Helvetica, Arial;
-	margin: auto;
-	margin-left: 9em;
-	width: 60%;
 }
  
 .subParagraph{
  	font: 1.3em quaver_sans, Helvetica, Arial;
  	letter-spacing: 1px;
- 	margin: auto;
- 	margin-left: 16.7em;
  	padding-top: .5em;
  	text-align: left;
- 	width: 60%;
+ 	width: 99%;
  }
 
 .textShadow{
@@ -282,6 +277,8 @@ nav ul{
 	padding-top: 2em;
 	padding-bottom: 5em;
 	margin: 0 auto;
+	width: 60%;
+	padding-left: 9em;
 }
 
 .posInput span{
@@ -311,7 +308,8 @@ nav ul{
 	padding: .3em 1em;
 	font: 1.9em cubano, Helvetica, Arial;
 	color: #fff;
-	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1)
+	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1);
+	margin-left: -1em;
 }
 
 .section{
@@ -337,10 +335,6 @@ nav ul{
 #addBeer li, #register li, #login li{
 	margin-bottom: 1em;
 	font-size: 1.3em;
-}
-
-.wrap{
-  margin-left: 20em;
 }
 
 #addBeer p{
@@ -412,15 +406,14 @@ footer li{
 }
 
 /*--------------------------------------------MEDIA QUERIES---------------------------------*/
+@media screen and (max-width: 1200px) {
+	.promoContent {
+	width: 56%;
+	padding-left: 19em;
+	}
+}
+
 @media screen and (max-width: 1024px) {
-	.container{
-		padding-top: 5em;	
-	}
-	
-	.promoContent{
-	padding-top: 3.5em;
-	width: 90%;
-	}
 	
 	.btnPos{
 		width: 15em;
@@ -433,6 +426,13 @@ footer li{
 	
 	#addBeer .container{
 		padding-top: 6em;
+	}
+	
+	#suggestBeer{
+		padding: 1em 2em 2em;
+	}
+	.findBtn{
+		margin-left: -0.5em;
 	}
 }
 
@@ -490,10 +490,14 @@ footer li{
 }
 
 @media screen and (max-width: 640px) {
+	#suggestBeer {
+	padding: 1em 4em;
+	}
+	
 	.findBtn{
 		font-size: 2em;
-		width: 80%;
-		margin-left: .1em;
+		width: 9em;
+		margin-left: -1.9em;
 	}
 	
 	.reasons{
@@ -526,9 +530,6 @@ footer li{
 		margin-top: 1em;
 	}
 	
-	.findBtn{
-		width: 7em;
-	}
 	.btnPos{
 		width: 17em;
 	}
@@ -538,7 +539,9 @@ footer li{
 	}
 	
 	.promoContent {
-		padding-bottom: 1em;
+		padding: 11em 3em 0  3em;
+		width: 95%;
+		margin: 0;
 	}
 	
 	.container{
@@ -569,10 +572,9 @@ footer li{
 
 
 @media screen and (max-width: 480px){
-	.findBtn{
-		width: 7em;
+	#suggestBeer {
+	padding: 1em 3em;
 	}
-
 	.titles{
 		margin-right: 2.0em;
 	}
@@ -621,6 +623,15 @@ footer li{
 }	
 
 @media screen and (max-width: 320px){
+	#suggestBeer {
+	padding: 1em;
+	}
+	
+	.findBtn {
+	width: 8em;
+	margin-left: -0.9em;
+	}
+	
 	#headerContent{
 		width: 80%;
 	}
@@ -628,11 +639,7 @@ footer li{
 	.promoContent{
 	width: 90%;
 	}
-		
-	.findBtn{
-		width: 7em;
-	}
-	
+			
 	.btnPos{
 		width: 14em;
 	}

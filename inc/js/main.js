@@ -1,7 +1,6 @@
 $(document).ready(function(){
 //initualize ketchup
 
-
 $.ketchup.messages({
   required : 'Enter a beer please!'
 });
@@ -51,6 +50,7 @@ $(".notamember").hide();
   $("#addBeer").hide();
   $("#favorite").hide();
   $("#register").hide();
+  $("#suggection").hide();
   
   $(".navHome").click(function(){
   	$("#login").hide();
@@ -132,7 +132,25 @@ $(".notamember").hide();
   	return false;
   });
   
+  //button page switch
   
+  $("#suggestBeer").submit(function(){
+  		$("#home").hide();
+  		$("#favorite").hide()
+  		$("#addBeer").hide();
+  		$("#login").hide();
+  		$(".ketchup-error").hide();
+  		$("#register").hide();
+  		
+  		if($('body').hasClass('active')){
+  			$("body").toggleClass("active");
+  			enable_scroll();
+  		};
+  		
+  		$("#suggection").show();
+  		return false;
+  		
+  });
   
   //This prevents the page from being scrollable when the side navigation bar is activated.
   var keys = [37, 38, 39, 40];
