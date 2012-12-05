@@ -5,7 +5,7 @@ Date: 12/04/2012
 
     LAST UPDATE
 Author: Rach
-Time: 6:34 pm
+Time: 7:14 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -20,6 +20,41 @@ nerDevelopment - Myriad
 Content - Quaver Sans (Letter Spacing = 1px)
 Titles/Headings - Cudano
 --------------------------------------------------------------------------------*/
+
+/*----------------------------FONTS-----------------------------*/
+@font-face {
+    font-family: 'quaver_sans';
+    src: url('quaversans-webfont.eot');
+    src: url('quaversans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('quaversans-webfont.woff') format('woff'),
+         url('quaversans-webfont.ttf') format('truetype'),
+         url('quaversans-webfont.svg#quaver_sans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quaver_serif';
+    src: url('quaverserif-webfont.eot');
+    src: url('quaverserif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('quaverserif-webfont.woff') format('woff'),
+         url('quaverserif-webfont.ttf') format('truetype'),
+         url('quaverserif-webfont.svg#quaver_serif') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'cubano';
+    src: url('cubano-regular-webfont.eot');
+    src: url('cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cubano-regular-webfont.woff') format('woff'),
+         url('cubano-regular-webfont.ttf') format('truetype'),
+         url('cubano-regular-webfont.svg#cubano') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*----------------------------GENERAL-----------------------------*/
 html{ 
@@ -123,7 +158,7 @@ header{
 
 #mainNav li a{
 	font-size: 1.5em;
-	font-family: Cubano, Helvetica, Arial;
+	font-family: cubano, Helvetica, Arial;
 	text-decoration: none;
 	letter-spacing: 0.04em;
 	padding: 0;
@@ -200,14 +235,14 @@ nav ul{
 
 /*------------------------------HOME PAGE-------------------------------*/
 .tagLine{
-	font: 2.4em Cubano, Helvetica, Arial;
+	font: 2.4em cubano, Helvetica, Arial;
 	margin: auto;
 	margin-left: 9em;
 	width: 60%;
 }
  
 .subParagraph{
- 	font: 1.3em "Quaver Sans", Helvetica, Arial;
+ 	font: 1.3em "quaver_sans", Helvetica, Arial;
  	letter-spacing: 1px;
  	margin: auto;
  	margin-left: 16.7em;
@@ -342,7 +377,6 @@ nav ul{
 }
 
 /*----------------------------------------FOOTER--------------------------------------*/
-
 footer{
 	clear: both;
 }
