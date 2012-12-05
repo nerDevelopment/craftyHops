@@ -46,10 +46,10 @@ Time: 7:21 pm
 			<div id="headerContent">
 				<nav id="mainNav">
 					<ul>
-		    				<li><a href="#home" class="navHome">Home</a></li>
-		    				<li><a href="#favorite" class="navFavorite">Favorite</a></li>
-		    				<li><a href="#addbeer" class="navAddbeer">Add a Beer</a></li>
-		    				<li><a href="#login" class="navLogin">Login</a></li>
+		    				<li class="circle"><a href="#home" class="navHome">Home</a></li>
+		    				<li class="circle"><a href="#favorite" class="navFavorite">Favorite</a></li>
+		    				<li class="circle"><a href="#addbeer" class="navAddbeer">Add a Beer</a></li>
+		    				<li class="circle"><a href="#login" class="navLogin">Login</a></li>
 		    				<li><a href="#register" class="navRegister">Register</a></li>
 		    			</ul>
 		    		</nav>
