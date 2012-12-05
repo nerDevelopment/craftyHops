@@ -267,12 +267,15 @@ nav ul{
 	font-weight: bold;
 }
 
-.sudggestInput {
+.sudggestInput{
 	border-radius: .3em;
 	font-size: 2.5em;
-	width: 80%;
+	width: 70%;
 	background-color: #5e2709;
 	border-color: #582408;
+	color: #ccb9a2;
+	outline: none;
+	text-indent: .2em;
 }
 
 .promoContent{
@@ -281,11 +284,11 @@ nav ul{
 	margin: 0 auto;
 }
 
-.posInput  span{
+.posInput span{
 	font-size: 2em; 
 	position: relative; 
 	right: .1em; 
-	color: #300d01;
+	color: #ccb9a2;
 	text-shadow: -2px -2px #250e02;	
 }
 
@@ -306,8 +309,8 @@ nav ul{
 	border: #c9480f;
 	border-radius: .1em;
 	padding: .3em 1em;
-	font-size: 2em;
-	color: #ffffff;
+	font: 1.9em cubano, Helvetica, Arial;
+	color: #fff;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1)
 }
 
