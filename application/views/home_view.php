@@ -5,7 +5,7 @@ Date: 12/04/2012
 
     LAST UPDATE
 Author: Rach
-Time: 6:34 pm
+Time: 7:21 pm
 ====================	-->
 <!DOCTYPE html>
 <html lang="en">
@@ -25,13 +25,13 @@ Time: 6:34 pm
 	<meta name="keywords" content="craft beer, craft, beer, bartender, alcohol">
 	
 <!--  ====================	Style Sheets ====================	-->
-	<link rel="stylesheet" href="../../inc/css/toast/toast.css" />
-	<link rel="stylesheet" href="../../inc/css/screen.css"/>
-	<link rel="stylesheet" href="../../inc/css/mobile.css"/>		
+	<link rel="stylesheet" href="inc/css/toast/toast.css" />
+	<link rel="stylesheet" href="inc/css/screen.css"/>
+	<link rel="stylesheet" href="inc/css/mobile.css"/>		
 		
 <!--  ====================	Google and modenizer js ====================	-->	
-	<script  src="../../inc/js/google.js" type="text/javascript"></script>
-	<script src="../../inc/js/modernizr.js" type="text/javascript"></script>
+	<script  src="inc/js/google.js" type="text/javascript"></script>
+	<script src="inc/js/modernizr.js" type="text/javascript"></script>
 <!--  ====================	ie exception sheets ====================	-->
 	<!--[if lte IE 6]>
 		<![endif]-->	
