@@ -1,11 +1,11 @@
 /*----------------------------------------INFORMATION------------------------------
 Author:  nerDevelopment
 Project: Crfty Hops
-Date: 12/04/2012
+Date: 12/05/2012
 
     LAST UPDATE
 Author: Rach
-Time: 7:14 pm
+Time: 3:10 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -180,7 +180,7 @@ nav ul{
 	margin: 0;
 }
 
-#mainNav  li{
+#mainNav li{
 	display: inline;
 	padding-right: 1.5em;
 }
@@ -188,7 +188,7 @@ nav ul{
 #mainNav{
 	float: right;
 	padding-top: 1em;
-	padding-right: 1.5em;
+	padding-right: 4em;
 }
 		
 #sidenav li a{
