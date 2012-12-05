@@ -4,8 +4,8 @@ Project: Crfty Hops
 Date: 12/05/2012
 
     LAST UPDATE
-Author: Jess
-Time: 3:50 pm
+Author: Rach
+Time: 4:31 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -320,23 +320,27 @@ nav ul{
 }
 
 .reasons h3{
-	font-size: 2em;
-	font-family: Luxi-Sans;
+	font: 2em cubano, Helvetica, Arial;
 	text-shadow: 3px 0px 2px rgba(27, 7, 2, 1);
 }
 
 .reasons p{
-	width: 50%;
+	width: 68%;
 	padding-right: 1.5em;
-	border-right: 1px inset #411a0a ;
 	height: 10em;
 	float: right;
+	font: 1.3em quaver_sans, Helvetica, Arial;
+	letter-spacing: 1px;
 }
 
 /*-------------------------------FORMS------------------------------*/
 #addBeer li, #register li, #login li{
 	margin-bottom: 1em;
 	font-size: 1.3em;
+}
+
+.wrap{
+  margin-left: 20em;
 }
 
 #addBeer p{
@@ -393,12 +397,13 @@ nav ul{
 /*----------------------------------------FOOTER--------------------------------------*/
 footer{
 	clear: both;
+	font-family: Myriad, "Times New Roman", serif;
+	padding: .1em 0 0 1em;
 }
 
 footer a{
 	text-decoration: underline;
 	display: inline;
-	padding-top: 1em;
 }
 
 footer li{
