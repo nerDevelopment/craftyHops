@@ -1,4 +1,38 @@
 $(document).ready(function(){
+//initualize ketchup
+
+
+$.ketchup.messages({
+  required : 'Enter a beer please!'
+});
+$('#suggestBeer').ketchup();
+
+$.ketchup.messages({
+  required : 'Please fill out this field.'
+});
+
+$("#addBeer").ketchup();
+
+$.ketchup.messages({
+  required : 'Please enter your password!',
+  email : 'Please enter a valid email address.',
+});
+
+$("#loginForm").ketchup();
+
+$.ketchup.messages({
+  required : 'Please fill out this field',
+  email : 'Please enter a valid email address.',
+});
+
+$("#registerForm").ketchup();
+
+
+//hidden messaes for the user to see once even happens
+//$("#succesMess").hide();
+$(".notamember").hide();
+
+
 //This is the side navigation function. It allows the button to be toggled and uses the functions below to enable and disable scrolling.
   var toggleBtn = $("#navbtn");
   if (toggleBtn.length > 0) {
@@ -31,6 +65,7 @@ $(document).ready(function(){
  	  	
  	$("#home").show();
  	return false;
+ 	$(".ketchup-error").hide();
  });
  
  $(".navFavorite").click(function(){
@@ -38,12 +73,13 @@ $(document).ready(function(){
  	$("#login").hide();
  	$("#addBeer").hide();
  	$("#register").hide();
+ 	$(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
  		enable_scroll();
  	};
- 	
+
  	$("#favorite").show();
  	return false;
  });
@@ -53,6 +89,7 @@ $(document).ready(function(){
  	$("#login").hide();
  	$("#favorite").hide();
  	$("#register").hide();
+ 	$(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -68,6 +105,7 @@ $(document).ready(function(){
    	$("#favorite").hide();
    	$("#addBeer").hide();
    	$("#register").hide();
+   	$(".ketchup-error").hide();
    	
    	if($('body').hasClass('active')){
    		$("body").toggleClass("active");
@@ -83,6 +121,7 @@ $(document).ready(function(){
    	$("#favorite").hide()
    	$("#addBeer").hide();
   	$("#login").hide();
+  	$(".ketchup-error").hide();
   	
   	if($('body').hasClass('active')){
   		$("body").toggleClass("active");

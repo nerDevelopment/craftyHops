@@ -1,11 +1,11 @@
 <!--  ====================	Information ====================	
 Author:  nerDevelopment
 Project: Crfty Hops
-Date: 12/04/2012
+Date: 12/05/2012
 
     LAST UPDATE
-Author: Rach
-Time: 7:21 pm
+Author: Jess
+Time: 3:38pm
 ====================	-->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@ Time: 7:21 pm
 	<link rel="stylesheet" href="inc/css/toast/toast.css" />
 	<link rel="stylesheet" href="inc/css/screen.css"/>
 	<link rel="stylesheet" href="inc/css/mobile.css"/>		
-		
+	<link rel="stylesheet" href="inc/js/plugins/ketchup/css/jquery.ketchup.css" type="" />
 <!--  ====================	Google and modenizer js ====================	-->	
 	<script  src="inc/js/google.js" type="text/javascript"></script>
 	<script src="inc/js/modernizr.js" type="text/javascript"></script>
@@ -84,13 +84,13 @@ Time: 7:21 pm
 					<div class="wrap">
 						<div class="grids">
 							<div class="grid-4 ">
-								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1"  /></p>
+								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1"  data-validate="validate(required)"/></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 							<div class="grid-4 ">
-		  	 	  		  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2"  /></p>
+		  	 	  		  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2"  data-validate="validate(required)"/></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 		  	 	  		  	<div class="grid-4 ">
-		  	 	  		  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3"  /></p>
+		  	 	  		  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3"  data-validate="validate(required)"/></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 		  	 	  		  		<p class="btnPos"><button class="findBtn">Find Beer!</button></p>
 						</div><!--  end grids -->
@@ -154,10 +154,10 @@ Time: 7:21 pm
 								<div class="grid-6">
 									<form id="addBeer" name="form" method="post" action="#">
 										<ul class="fields">
-											<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" /></li>
-											<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
-											<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized"/></li>
-											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage"  /></li>
+											<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" data-validate="validate(required)"/></li>
+											<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized" data-validate="validate(required)"/></li>
+											<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized" data-validate="validate(required)"/></li>
+											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage" data-validate="validate(required)" /></li>
 											<li><input type="submit"  value="Add" class="submit"/></li>
 										</ul><!-- end fields  -->
 									</form><!--  end addBeer -->
@@ -191,8 +191,8 @@ Time: 7:21 pm
 							<h2>Login</h2>
 									
 							<ul class="fields">
-								<li><span class="titles">Email:</span><input type="text" name="logemail" id="logemail" class="colorized"/></li>
-								<li><span  class="titles">Password:</span><input type="text" name="logpass" id="logpass" class="colorized"/></li>
+								<li><span class="titles">Email:</span><input type="text" name="logemail" id="logemail" class="colorized" data-validate="validate(email)"/></li>
+								<li><span  class="titles">Password:</span><input type="text" name="logpass" id="logpass" class="colorized" data-validate="validate(required)"/></li>
 								<li><input type="submit"  value="Register" class="submit"/></li>
 							</ul>
 									
@@ -217,12 +217,11 @@ Time: 7:21 pm
 							<h2>Register</h2>
 							<div class="twoCol">
 								<ul class="fields">
-									<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized"/></li>
-									<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized"/></li>
-									<li>	<span class="titles">Age:</span><input type="text" name="age" class="colorized" id="age" /></li>								
-									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" /></li>
-									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" /></li>
-									<li>	<span class="titles">Password:</span><input type="text" name="email" class="colorized" id="repass" /></li>
+									<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized" data-validate="validate(required)"/></li>
+									<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized" data-validate="validate(required)"/></li>						
+									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email"  data-validate="validate(email)"/></li>
+									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass"  data-validate="validate(required)"/></li>
+									<li>	<span class="titles">Password:</span><input type="text" name="email" class="colorized" id="repass"  data-validate="validate(required)"/></li>
 									<li><input type="submit"  value="Register" class="submit"/></li>
 								</ul>
 							</div><!--  end twoCol  -->	
@@ -246,8 +245,9 @@ Time: 7:21 pm
 <!--  ====================	Jquery and facebook ====================	-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
   		<script src="../inc/js/main.js" type="text/javascript"></script>
+		
+		<script src="inc/js/plugins/ketchup/js/jquery.ketchup.all.min.js" type="text/javascript"></script>  		<script src="../../inc/js/face.js"></script>	
   		
-  		<script src="../../inc/js/face.js"></script>	
   		<div id="fb-root"></div>
   		
   		<script src="http://connect.facebook.net/en_US/all.js"></script>
