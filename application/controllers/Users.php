@@ -14,18 +14,39 @@ class Users extends CI_Controller {
 	{
 	}
 
-
+	public function email_taken()
+	{
+		$email = trim($_POST['email']);
+		$exist = $this->users_model->checkEmail($email);
+		if($exist){
+			echo 1;
+		}
+	} 
+	
+	public function addUser()
+		{
+			$user = $this->users_model->addUser($_POST);
+			$this->setSession($user);
+		}
+	
+		public function updateUser()
+		{
+			$user = $this->users_model->updateUser($_POST);
+			$this->setSession($user);		
+		}
+	
+	
 	public function addFbUser()
 	{
 		$fbUser = $_POST;
-		$exists = $this->users_model->checkFaceData($fbUser['user_id']);
-//		if($exists){
-//			$user = $this->users_model->updateFaceUser($fbUser);		
-//			$this->setSession($user);
-//		}else{
-//			$user = $this->users_model->addFaceUser($fbUser);
-//			$this->setSession($user);
-//		}
+		$exists = $this->users_model->checkFaceData($fbUser['fbUser_id']);
+		if($exists){
+			$user = $this->users_model->updateFaceUser($fbUser);		
+			$this->setSession($user);
+		}else{
+			$user = $this->users_model->addFaceUser($fbUser);
+			$this->setSession($user);
+		}
 		
 	}
 
@@ -33,10 +54,10 @@ class Users extends CI_Controller {
 		$user = $this->users_model->addFacePhoto($_POST);
 	}
 	
-	function setSession($user)
+	public function setSession($user)
 	{
 		$data = array(
-					'user_id' => $user[0]['user_id'],
+					'fbUser_id' => $user[0]['fbUser_id'],
 					'firstName' => $user[0]['firstName'],
 					'lastName' => $user[0]['lastName'],
 					'email' => $user[0]['email'],

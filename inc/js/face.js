@@ -42,7 +42,7 @@ $(document).ready(function(){
 	  
 	  				  			
 	  			$.post('../index.php/users_model/addFaceUser',
-	  				{'user_id':response.id,
+	  				{'fbUser_id':response.id,
 	  				'firstName':response.first_name,
 	  				 'lastName':response.last_name,
 	  				 'email':response.email

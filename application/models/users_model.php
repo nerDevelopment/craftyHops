@@ -6,15 +6,78 @@ class users_model extends CI_Model{
 		parent::__construct();	
 	}
 	
-	public function addFaceUser($fbUser)
+	public function checkEmail($email)
 	{
-		$this->db->query('INSERT INTO Users (user_id, firstName, lastName, email)
-							VALUE ("'.$fbUser[""].'","'.$fbUser["user_id"].'","'.$fbUser["firstName"].'","'.$fbUser["lastName"].'","'.$fbUser["email"]'");');
-		$uId = $this->db->insert_id();				
-		
-		$query = $this->db->query('SELECT user_id, firstName, lastName, email FROM Users WHERE user_id ="'.$uId.'";');
+		$query = $this->db->query('Select email from Users email ="'($email).'"');
+		$results = $query->result_array();
+		if($results){
+			return 1;
+		}
+	}
+	
+	public function addUser($user)
+	{
+		$this->db->query('Insert into Users ( firstName, lastName, email, password)
+						  Value ("'.$fbUser["firstN"].'","'.$fbUser["lastN"].'","'.$fbUser["email"].'","'.$fbUser["pass"]'")');
+		$uId = $this->db->insert_id();
+						  
+		$query = $this->db->query('Select fistName, lastname, user_id From Users Where user_Id ="'.$uId.'";');
 		$results = $query->result_array();
 		return $results;
 	}
 	
+	public function updateUser($user)
+	{
+		$this->db->query('Update Users Set firstName = "'.$user["firstN"].'",
+											lastName = "'.$user["lastN"].'",
+											email = "'.$user["email"].'",
+											password = "'.$user["pass"].'"
+											');
+								  
+		$query = $this->db->query('Select firstName, lastName, user_id, email From Users Where email ="'($user["email"]).'"');
+		$results = $query->result_array();
+		return $results;
+	}
+	
+		public function checkFaceData($fbUser_id)
+		{
+			$query = $this->db->query('Select fbUser_id from Users Where fbUser_id ="'.$fbUser_id.'"');
+			
+			if($query->num_rows() > 0){
+				
+			}else{
+				$this->db->query('Insert into Users (fbUser_id, firstName, lastName, email) value("'.$fbUser["fbUser_id"].'","'.$fbUser["firstName"].'","'.$fbUser["lastName"].'","'.$fbUser["email"].'")');
+			}		
+		}
+		
+		
+		public function updateFBUser($fbUser) 
+		{
+			$this->db->query('Update Users Set firstName = "'.$fbUser["firstName"].'",
+										lastName = "'.$fbUser["lastName"].'",
+										email = "'.$fbUser["email"].'",
+										Where Users.fbUser_id ="'.$fbUser["fbUser_id"].'"');
+		
+			$query = $this->db->query('Select email, fbUser_id From users Where fbUser_id ="'.$fbUser["fbUser_id"].'";');
+					$results = $query->result_array();
+					return $results;
+		}
+		
+		public function addFacePhoto($pic)
+		{
+			$this->db->query('Update Users Set profilePic = "'.$pic["url"].'"
+								Where Users.fbUser_id= "'.$pic["fbUser_id"].'"');	
+	
+		}
+		
+		public function addFaceUser($fbUser)
+		{
+			$this->db->query('INSERT INTO Users (fbUser_id, firstName, lastName, email)
+								VALUE ("'.$fbUser["fbUser_id"].'","'.$fbUser["firstName"].'","'.$fbUser["lastName"].'","'.$fbUser["email"].'","'.$fbUser["pass"]'")');
+			$uId = $this->db->insert_id();				
+			
+			$query = $this->db->query('SELECT fbUser_id, firstName, lastName, email FROM Users WHERE fbUser_id ="'.$uId.'";');
+			$results = $query->result_array();
+			return $results;
+		}
 }
