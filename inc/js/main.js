@@ -28,7 +28,7 @@ $("#registerForm").ketchup();
 
 
 //hidden messaes for the user to see once even happens
-//$("#succesMess").hide();
+$("#succesMess").hide();
 $(".notamember").hide();
 
 
@@ -146,10 +146,23 @@ $(".notamember").hide();
   			$("body").toggleClass("active");
   			enable_scroll();
   		};
-  		
   		$("#suggection").show();
   		return false;
   		
+  });
+  
+  $("#registerPage").submit(function(){
+  	$.post('../Jessica/index.php/Users/addUserToData',
+  			{'firstN':$("#firstN").val(),
+  			'lastN':$("#lastN").val(),
+  			 'email':$("#email").val(),
+  			 'pass':$("#pass").val()
+  			},function(response){
+  				//console.log("added to database", response);
+  				//window.location = 'http://www.crafty-hops.com';
+		});
+	
+  	return false;
   });
   
   //This prevents the page from being scrollable when the side navigation bar is activated.

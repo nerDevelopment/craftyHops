@@ -215,7 +215,7 @@
 					
 				<div class="membercontent">
 					<div id="registerForm" class="stylized">
-						<form id="register" name="form" method="post" action="#">
+						<form id="registerPage" name="form" method="post" action="#">
 							<h2>Register</h2>
 							<div class="twoCol">
 								<ul class="fields">

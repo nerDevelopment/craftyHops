@@ -41,14 +41,15 @@ $(document).ready(function(){
 	  			console.log('Facebook Info', response);
 	  
 	  				  			
-	  			$.post('../index.php/users_model/addFaceUser',
+	  			$.post('../Jessica/index.php/Users/addFbUser',
 	  				{'fbUser_id':response.id,
 	  				'firstName':response.first_name,
 	  				 'lastName':response.last_name,
 	  				 'email':response.email
 	  				},function(response){
 	  					console.log("added to database", response);
-	  					window.location = 'http://www.crafty-hops.com';
+	  					//window.location = 'http://www.crafty-hops.com/Jessica';
+	  					alert("yeah"):
 	  				}
 	  			);
 	  		});
