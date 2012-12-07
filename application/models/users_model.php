@@ -46,28 +46,31 @@ public function addUser($user)
 	
 		public function checkFaceData($fbUser_id)
 		{
-			$query = $this->db->query('Select fbUser_id from Users Where fbUser_id ="'.$fbUser_id.'"');
+			$query = $this->db->query('Select fbUser_id from Users Where fbUser_id ="'.$_POST["fbUser_id"].'"');
 			
 			if($query->num_rows() > 0){
+					$this->db->query('Update Users Set firstName = "'.$_POST["firstName"].'",
+												lastName = "'.$_POST["lastName"].'",
+												email = "swamp@yahoo.com"
+												Where Users.fbUser_id ="'.$_POST["fbUser_id"].'"');
+					
+				$query = $this->db->query('Select email, fbUser_id From users Where fbUser_id ="'.$fbUser["fbUser_id"].'";');
+						$results = $query->result_array();
+						return $results;
 				
 			}else{
-				$this->db->query('Insert into Users (fbUser_id, firstName, lastName, email) value("'.$fbUser["fbUser_id"].'","'.$fbUser["firstName"].'","'.$fbUser["lastName"].'","'.$fbUser["email"].'")');
+				$this->db->query('Insert into Users(fbUser_id, firstName, lastName, email)
+												Value("'.$_POST['fbUser_id'].'","'.$_POST["firstName"].'","'.$_POST["lastName"].'","'.$_POST["email"].'")');	
+												
+				$uId = $this->db->insert_id();
+				
+				$query = $this->db->query('SELECT fbUser_id, firstName, lastName, email FROM Users WHERE fbUser_id ="'.$uId.'";');
+				$results = $query->result_array();
+				return $results;
+													
 			}		
 		}
-		
-		
-		public function updateFBUser($fbUser) 
-		{
-			$this->db->query('Update Users Set firstName = "'.$fbUser["firstName"].'",
-										lastName = "'.$fbUser["lastName"].'",
-										email = "'.$fbUser["email"].'",
-										Where Users.fbUser_id ="'.$fbUser["fbUser_id"].'"');
-		
-			$query = $this->db->query('Select email, fbUser_id From users Where fbUser_id ="'.$fbUser["fbUser_id"].'";');
-					$results = $query->result_array();
-					return $results;
-		}
-		
+
 		public function addFacePhoto($pic)
 		{
 			$this->db->query('Update Users Set profilePic = "'.$pic["url"].'"
@@ -75,17 +78,4 @@ public function addUser($user)
 	
 		}
 		
-	public function addFaceUser($fbUser)
-		{
-			$this->db->query('Insert into Users(fbUser_id, firstName, lastName, email)
-											Value("'.$_POST['fbUser_id'].'","'.$_POST["firstName"].'","'.$_POST["lastName"].'","'.$_POST["email"].'")');			
-			
-			$uId = $this->db->insert_id();	
-			
-			
-			
-//			$query = $this->db->query('SELECT fbUser_id, firstName, lastName, email FROM Users WHERE fbUser_id ="'.$uId.'";');
-//			$results = $query->result_array();
-//			return $results;
-		}
-}
+	}

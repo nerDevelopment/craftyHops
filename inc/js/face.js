@@ -47,9 +47,9 @@ $(document).ready(function(){
 	  				 'lastName':response.last_name,
 	  				 'email':response.email
 	  				},function(response){
-	  					console.log("added to database", response);
+	  					console.log("added to database", response.id);
 	  					//window.location = 'http://www.crafty-hops.com/Jessica';
-	  					alert("yeah"):
+	  					alert("yeah");
 	  				}
 	  			);
 	  		});
