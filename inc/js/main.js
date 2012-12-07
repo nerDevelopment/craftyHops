@@ -153,15 +153,26 @@ $(".notamember").hide();
   
   $("#registerPage").submit(function(){
   	$.post('../Jessica/index.php/Users/addUserToData',
-  			{'firstN':$("#firstN").val(),
-  			'lastN':$("#lastN").val(),
-  			 'email':$("#email").val(),
-  			 'pass':$("#pass").val()
-  			},function(response){
-  				//console.log("added to database", response);
-  				//window.location = 'http://www.crafty-hops.com';
+  			{'firstN': $("#firstN").val(),
+  			'lastN': $("#lastN").val(),
+  			 'email': $("#email").val(),
+  			 'pass': $("#pass").val()
+  			},function(success){
+  				window.location = 'http://www.crafty-hops.com/Jessica';
 		});
-	
+  	return false;
+  });
+  
+  $("#addBeer").submit(function(){
+  		$.post('../Jessica/index.php/Email'),
+  		{'name': $('#name').val(),
+  		'brewed': $('#brewed').val(),
+  		'img': $('#beerimage').val()
+  		},function(success)
+
+  	$('#succesMess').fadeIn().delay(5000).fadeOut('slow');
+  	
+  	
   	return false;
   });
   

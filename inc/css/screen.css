@@ -95,14 +95,14 @@ p, h1, form{
 }
 
 /*----------------------------------GLOBAL---------------------------*/
-.notamember{
+.notamember, #succesMess{
 	background-color: #a09489;
 	width: 50%;
 	margin:  0 auto;
 	border-radius: .3em;
 	padding: .5em;
 }
-.notamember p{
+.notamember p, #succesMess p{
 	font-size: 1.5em;
 	text-align: center;
 }

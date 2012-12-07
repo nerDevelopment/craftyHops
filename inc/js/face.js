@@ -33,41 +33,27 @@ $(document).ready(function(){
 	  
 	  	//Get user facebook information and update or add to database
 	  	var getFbInfo = function(){
+	  	
 	  		console.log("getFbInfo function");
 	  
 	  		FB.api('/me', function(response) {
 	  			userFbId = response.id;
 
-	  			console.log('Facebook Info', response);
-	  
-	  				  			
-	  			$.post('../Jessica/index.php/Users/addFbUser',
-	  				{'fbUser_id':response.id,
-	  				'firstName':response.first_name,
-	  				 'lastName':response.last_name,
-	  				 'email':response.email
-	  				},function(response){
-	  					console.log("added to database", response.id);
-	  					//window.location = 'http://www.crafty-hops.com/Jessica';
-	  					alert("yeah");
-	  				}
-	  			);
-	  		});
-	  
-
-	  		console.log("getProPic function");
-	  		FB.api('/me/picture', function(response){
-	 	  		console.log("picture", response)	
-//	 	  		$.post('../index.php/Members/addFbImageURL',
-//	  			{'url':response.data.url,
-//	  			},function(response){
-//	  				console.log("FB IMAGE Response line 198::", response);
-//	  			}
-//	  			);
-	  		});
-	  
+	  			FB.api('/me/picture', function(pic){
+	  				console.log(pic.data.url);
+					$.post('../Jessica/index.php/Users/addFbUser',
+						{'fbUser_id':response.id,
+						'firstName':response.first_name,
+						 'lastName':response.last_name,
+						 'email':response.email,
+						 'url': pic.data.url
+						},function(response){
+							console.log("added to database", response.id);
+							window.location = 'http://www.crafty-hops.com/Jessica';
+						}
+	  				);
+	  			});	  				  			
+	  		});	  
 	  	};
-	  
-	  
 	 } 
 });

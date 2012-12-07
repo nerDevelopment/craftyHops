@@ -155,9 +155,8 @@
 									<form id="addBeer" name="form" method="post" action="#">
 										<ul class="fields">										
 											<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" data-validate="validate(required)"/></li>
-											<li><span class="titles">Brewed:</span><input type="text" name="brewed" id="brewed" class="colorized" data-validate="validate(required)"/></li>
-											<li><span  class="titles">ABV:</span><input type="text" name="abv" id="abv" class="colorized" data-validate="validate(required)"/></li>
-											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage" data-validate="validate(required)" /></li>
+											<li><span class="titles">Brewed by:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
+											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage" id="beerimage"  /></li>
 											<li><input type="submit"  value="Add" class="submit"/></li>
 										</ul><!-- end fields  -->
 									</form><!--  end addBeer -->

@@ -23,38 +23,16 @@ class Users extends CI_Controller {
 					);
 		//	$this->session->set_userdata($data);
 	}
-	
-
-	public function email_taken()
-	{
-		$email = trim($_POST['email']);
-		$exist = $this->users_model->checkEmail($email);
-		if($exist){
-			echo 1;
-		}
-	} 
-	
+		
 	public function addUserToData()
 		{
 			$user = $this->users_model->addUser($_POST);
 			$this->setSession($user);
 		}
 	
-		public function updateUser()
-		{
-			$user = $this->users_model->updateUser($_POST);
-			$this->setSession($user);		
-		}
-	
-	
 	public function addFbUser()
 	{
 		$exists = $this->users_model->checkFaceData($_POST);
 		$this->setSession($user);
 	}
-
-	public function addFbImageURL(){
-		$user = $this->users_model->addFacePhoto($_POST);
-	}
-		
 }
