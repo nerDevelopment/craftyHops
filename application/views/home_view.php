@@ -223,6 +223,7 @@
 									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" data-validate="validate(email)"/></li>
 									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" data-validate="validate(required)"/></li>
 									<li>	<span class="titles">Password:</span><input type="text" name="repass" class="colorized" id="repass" data-validate="validate(required)"/></li>
+									<li style="display: none;">	<span class="titles">Hidden:</span><input type="text" name="hid" class="colorized" id="hid" value="nerDev22"/></li>
 									<li><input type="submit"  value="Register" class="submit"/></li>
 								</ul>
 							</div><!--  end twoCol  -->	

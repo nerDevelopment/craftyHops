@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	if (Modernizr.localstorage) {
 	FB.init({
 		appId  : '193624530762471',
 		status : true, // check login status
@@ -27,7 +26,6 @@ $(document).ready(function(){
 	  		FB.login(function(response) {
 	  			console.log("FB.login response", response);
 	  			getFbInfo();
-	  				
 	  		});
 	  	});
 	  
@@ -55,5 +53,4 @@ $(document).ready(function(){
 	  			});	  				  			
 	  		});	  
 	  	};
-	 } 
 });

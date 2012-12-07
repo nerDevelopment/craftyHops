@@ -132,8 +132,17 @@ $(".notamember").hide();
   	return false;
   });
   
-  //button page switch
-  
+  //Double check that the registreation email is valid
+	function validateEmail(sEmail){
+		var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+		if(filter.test(sEmail)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	  //button page switch
   $("#suggestBeer").submit(function(){
   		$("#home").hide();
   		$("#favorite").hide()
@@ -152,27 +161,39 @@ $(".notamember").hide();
   });
   
   $("#registerPage").submit(function(){
-  	$.post('../Jessica/index.php/Users/addUserToData',
-  			{'firstN': $("#firstN").val(),
-  			'lastN': $("#lastN").val(),
-  			 'email': $("#email").val(),
-  			 'pass': $("#pass").val()
-  			},function(success){
-  				window.location = 'http://www.crafty-hops.com/Jessica';
-		});
+  	var sEmail = $('#email').val();
+  	
+	 if($("#firstN").val() == "" || $("#lastN").val() == "" || $("#email").val() == "" || $("#pass").val() == "" || $("#repass").val() == "")
+	 {
+	    return false;
+	}else {
+		if(validateEmail(sEmail))
+		{
+			$.post('../Jessica/index.php/Users/addUserToData',
+					{'firstN': $("#firstN").val(),
+					'lastN': $("#lastN").val(),
+					 'email': $("#email").val(),
+					 'pass': $("#pass").val()
+					},function(success){
+						window.location = 'http://www.crafty-hops.com/Jessica';
+				});
+		}else{
+			return false;
+		}
+	}
   	return false;
   });
   
   $("#addBeer").submit(function(){
-  		$.post('../Jessica/index.php/Email'),
+  		$.post('../Jessica/index.php/Email',
   		{'name': $('#name').val(),
   		'brewed': $('#brewed').val(),
   		'img': $('#beerimage').val()
-  		},function(success)
-
+  		},function(success){
+	
   	$('#succesMess').fadeIn().delay(5000).fadeOut('slow');
   	
-  	
+  	});
   	return false;
   });
   
