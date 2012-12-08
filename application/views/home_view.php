@@ -213,9 +213,10 @@
 				</div><!--  end notamember  -->
 					
 				<div class="membercontent">
+					<div class="error"></div>
 					<div id="registerForm" class="stylized">
+						<h2>Register</h2>
 						<form id="registerPage" name="form" method="post" action="#">
-							<h2>Register</h2>
 							<div class="twoCol">
 								<ul class="fields">
 									<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized" data-validate="validate(required)"/></li>

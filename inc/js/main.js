@@ -1,6 +1,5 @@
 $(document).ready(function(){
 //initualize ketchup
-
 $.ketchup.messages({
   required : 'Enter a beer please!'
 });
@@ -169,14 +168,20 @@ $(".notamember").hide();
 	}else {
 		if(validateEmail(sEmail))
 		{
+			if($("#pass").val() == $("#repass").val())
+			{
 			$.post('../Jessica/index.php/Users/addUserToData',
 					{'firstN': $("#firstN").val(),
 					'lastN': $("#lastN").val(),
 					 'email': $("#email").val(),
 					 'pass': $("#pass").val()
 					},function(success){
-						window.location = 'http://www.crafty-hops.com/Jessica';
+						window.location = 'http://www.crafty-hops.com/Jessica';		
 				});
+				}else{
+				$(".error").append('<p>Please make sure your passwords match!</p>');
+					return false;
+				}
 		}else{
 			return false;
 		}
