@@ -1,11 +1,11 @@
 /*----------------------------------------INFORMATION------------------------------
 Author:  nerDevelopment
 Project: Crfty Hops
-Date: 12/05/2012
+Date: 12/10/2012
 
     LAST UPDATE
 Author: Jess
-Time: 5:18 pm
+Time: 4:10 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -289,6 +289,10 @@ nav ul{
 	text-shadow: -2px -2px #250e02;	
 }
 
+.posInput{
+	padding-left:  15em;
+}
+
 .btnPos{
 	width: 14em;
 	margin:  1.5em auto;
@@ -310,6 +314,7 @@ nav ul{
 	color: #fff;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1);
 	margin-left: -1em;
+	text-align: center;
 }
 
 .section{
@@ -411,6 +416,11 @@ footer li{
 	width: 56%;
 	padding-left: 19em;
 	}
+	
+	.posInput{
+		padding-left: 22em;
+	}
+	
 }
 
 @media screen and (max-width: 1024px) {
@@ -433,6 +443,10 @@ footer li{
 	}
 	.findBtn{
 		margin-left: -0.5em;
+	}
+	
+	.posInput{
+		padding-left: 17em;
 	}
 }
 
@@ -487,6 +501,10 @@ footer li{
 	#addBeer .container{
 		padding-top: 4em;
 	}
+	
+	.posInput{
+		padding-left: 0;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -496,7 +514,7 @@ footer li{
 	
 	.findBtn{
 		font-size: 2em;
-		width: 9em;
+		width: 9.7em;
 		margin-left: -1.9em;
 	}
 	
@@ -561,12 +579,20 @@ footer li{
 	#addBeer .container{
 		padding-top: 2em;
 	}
+	
+	.posInput{
+		padding-left: 2em;
+	}
 }
 
 @media screen and (max-width: 609px){
 	.container {
 	width: 98%;
 	}
+	.findBtn{
+		width: 9em;
+	}
+	
 }
 
 
