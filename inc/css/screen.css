@@ -94,6 +94,10 @@ p, h1, form{
 	float: right;
 }
 
+.grid-4, .grid-one-third {
+width: 29%;
+}
+
 /*----------------------------------GLOBAL---------------------------*/
 .notamember, #succesMess{
 	background-color: #a09489;
