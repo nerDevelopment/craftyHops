@@ -33,10 +33,8 @@
 
   <body  class="hide-extras">
 <!--  ====================	Header and navigation ====================	-->	
-		
 		<header>
 			<div id="headerContent">
-				
 				<nav id="mainNav">
 					<ul>
 		    			<li class="circle"><a href="#home" class="navHome">Home</a></li>
@@ -122,12 +120,22 @@
 <!--  ====================  Suggection page ====================	-->
 	<article id="suggection">
 		<div class="container">
-			<h1>Hello there</h1>
+			<h3>Suggestions</h3>
+			<ul class="suggested">
+			  <li><img src="inc/images/magic9.png" alt="suggest1" /><p>Magic Hat #9</p></li>
+			  <li><img src="inc/images/fatTire.png" alt="suggest2" /><p>Fat Tire</p></li>
+			  <li><img src="inc/images/levitation.png" alt="suggest3" /><p>Levitation Ale</p></li>
+			  <li><img src="inc/images/redSeal.png" alt="suggest4" /><p>Red Seal Ale</p></li>
+			  <li><img src="inc/images/autumnFest.png" alt="suggest5" /><p>Weyerbacher's Autumn Fest</p></li>
+			  <li><img src="inc/images/blue.png" alt="suggest6" /><p>Labatt Blue</p></li>
+			  <li><img src="inc/images/sierraPale.png" alt="suggest7" /><p>Sierra Nevada Pale Ale</p></li>
+			  <li><img src="inc/images/saint.png" alt="suggest8" /><p>5 A.M. Saint</p></li>
+			  <li><img src="inc/images/landShark.png" alt="suggest9" /><p>Landshark Lager</p></li>
+			</ul>
 		</div><!--  end container  -->	
 	</article><!--  end suggection  -->	
 
 <!--  ====================  Favorite page ====================	-->
-
 		<article id="favorite">
 			<p>favorite</p>
 		</article><!--  end favorite  -->
@@ -169,14 +177,11 @@
 		</article><!--  end addBeer page -->	
 			
 <!--  ====================  Login page ====================	-->
-			
-		
 		<article id="login">
 			<div class="container">
 				<div class="notamember">
 					<p >Please make sure you are logged in to view this feature!</p>
 				</div><!--  end notamember  -->
-				
 				<div class="membercontent">
 					<div id="loginForm" class="stylized">
 						<form id="login" name="form" method="post" action="#">
@@ -235,7 +240,6 @@
 		</article><!--  end register page  -->
 		
 <!--  ====================  Footer page ====================	-->
-	
 		<footer>
 	   		<ul>
 	   			<li>nerDevelopment — All rights reserved</li>
@@ -243,18 +247,13 @@
 	   			<li><a href="#">Contact Us</a></li>
 	   		</ul>
 	   	</footer>
-   	
 
 <!--  ====================	Jquery and facebook ====================	-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
 		<script src="inc/js/plugins/ketchup/js/jquery.ketchup.all.min.js" type="text/javascript"></script>
-		
-  		<script src="inc/js/main.js" type="text/javascript"></script>
-  		
-  		
-  		<script src="inc/js/face.js"></script>	
-  		<div id="fb-root"></div>
-  		
-  		<script src="http://connect.facebook.net/en_US/all.js"></script>
+		<script src="inc/js/main.js" type="text/javascript"></script>
+		<script src="inc/js/face.js"></script>	
+		<div id="fb-root"></div>
+		<script src="http://connect.facebook.net/en_US/all.js"></script>
 	</body>
 </html>
