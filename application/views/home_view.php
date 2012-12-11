@@ -97,7 +97,7 @@
 		  	 	  		<div class="grid-4 ">
 		  	 	  			<h3>FIND.</h3>	
 		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />
-		  	 	  			<p class="text">Tell us your top three favorite beers and we'll caluclate a selection of craft beers for you.</p>
+		  	 	  			<p class="text">Tell us your top three favorite beers and we'll calculate a selection of craft beers for you.</p>
 		  	 	  			<div class="clear"></div>
 		  	 	  		</div><!--  end grid-4  -->	
 		  	 	  		<div class="grid-4">
@@ -109,7 +109,7 @@
 		  	 	  		<div class="grid-4">
 		  	 	  			<h3>SOCIALIZE.</h3>
 		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />		
-		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experence by writing a review, voting up a review, or adding a Craft beer to our collection.</p>
+		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experience by writing a review, voting up a review, or adding a Craft beer to our collection.</p>
 		  	 	  			<div class="clear"></div>
 		  	 	  		</div><!--  end grid-4  -->
 		  	 	  	</div><!--  end grids and reasons  -->
@@ -118,22 +118,49 @@
 			</div><!--  end container  -->
 		</article><!--  end home  -->	
 <!--  ====================  Suggection page ====================	-->
-	<article id="suggection">
+	<article id="suggestion">
 		<div class="container">
 			<h3>Suggestions</h3>
-			<ul class="suggested">
-			  <li><img src="inc/images/magic9.png" alt="suggest1" /><p>Magic Hat #9</p></li>
-			  <li><img src="inc/images/fatTire.png" alt="suggest2" /><p>Fat Tire</p></li>
-			  <li><img src="inc/images/levitation.png" alt="suggest3" /><p>Levitation Ale</p></li>
-			  <li><img src="inc/images/redSeal.png" alt="suggest4" /><p>Red Seal Ale</p></li>
-			  <li><img src="inc/images/autumnFest.png" alt="suggest5" /><p>Weyerbacher's Autumn Fest</p></li>
-			  <li><img src="inc/images/blue.png" alt="suggest6" /><p>Labatt Blue</p></li>
-			  <li><img src="inc/images/sierraPale.png" alt="suggest7" /><p>Sierra Nevada Pale Ale</p></li>
-			  <li><img src="inc/images/saint.png" alt="suggest8" /><p>5 A.M. Saint</p></li>
-			  <li><img src="inc/images/landShark.png" alt="suggest9" /><p>Landshark Lager</p></li>
-			</ul>
+			<div class="suggestedContainer">
+        <figure>
+          <img src="inc/images/magic9.png" alt="suggest1" />
+          <figcaption>Magic Hat #9</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/fatTire.png" alt="suggest2" />
+          <figcaption>Fat Tire</figcaption>
+        </figure>
+         <figure>
+          <img src="inc/images/levitation.png" alt="suggest3" />
+          <figcaption>Levitation Ale</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/redSeal.png" alt="suggest4" />
+          <figcaption>Red Seal</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/autumnFest.png" alt="suggest5" />
+          <figcaption>Autumn Fest</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/blue.png" alt="suggest6" />
+          <figcaption>Labatt Blue</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/sierraPale.png" alt="suggest7" />
+          <figcaption>Sierra Nevada Pale Ale</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/saint.png" alt="suggest8" />
+          <figcaption>5 A.M. Saint</figcaption>
+        </figure>
+        <figure>
+          <img src="inc/images/landShark.png" alt="suggest9" />
+          <figcaption>Landshark Lager</figcaption>
+        </figure>
+			</div><!-- end suggestedContainer -->
 		</div><!--  end container  -->	
-	</article><!--  end suggection  -->	
+	</article><!--  end suggestion  -->	
 
 <!--  ====================  Favorite page ====================	-->
 		<article id="favorite">

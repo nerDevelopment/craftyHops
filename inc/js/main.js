@@ -49,7 +49,7 @@ $(".notamember").hide();
   $("#addBeer").hide();
   $("#favorite").hide();
   $("#register").hide();
-  $("#suggection").hide();
+  $("#suggestion").hide();
   
   $(".navHome").click(function(){
   	$("#login").hide();
@@ -154,7 +154,7 @@ $(".notamember").hide();
   			$("body").toggleClass("active");
   			enable_scroll();
   		};
-  		$("#suggection").show();
+  		$("#suggestion").show();
   		return false;
   		
   });

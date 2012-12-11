@@ -106,6 +106,7 @@ width: 29.5%;
 	border-radius: .3em;
 	padding: .5em;
 }
+
 .notamember p, #succesMess p{
 	font-size: 1.5em;
 	text-align: center;
@@ -305,12 +306,12 @@ nav ul{
 .findBtn{
 	background: #e99d4a; /* Old browsers */
 	background: -moz-linear-gradient(top,  #e99d4a 45%, #e57d40 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#e99d4a), color-stop(100%,#e57d40)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#e99d4a), color-stop(100%,#e57d40)); /*Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #e99d4a 45%,#e57d40 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9*/
 	border: #c9480f;
 	border-radius: .1em;
 	padding: .3em 1em;
@@ -338,6 +339,36 @@ nav ul{
 	float: right;
 	font: 1.3em quaver_sans, Helvetica, Arial;
 	letter-spacing: 1px;
+}
+
+/*------------------------------SUGGESTIONS PAGE-------------------------------*/
+#suggestion h3{
+  padding-left: 11em;
+  font: 2em cubano, Helvetica, Arial;
+}
+
+.suggestedContainer{
+  margin: 0 auto;
+  width: 825px;
+}
+
+figure{
+  float: left;
+  padding: 0 0 5em 5em;
+}
+
+figure img{
+  border: #d3c5c6 5px solid;
+  /*
+-webkit-box-shadow:  1px 1px 2px 3px #2f0c02;
+  box-shadow:  1px 1px 2px 3px #2f0c02;
+*/
+}
+
+figcaption{
+  font: 1.3em quaver_sans, Helvetica, Arial;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 /*-------------------------------FORMS------------------------------*/
