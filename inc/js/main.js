@@ -69,6 +69,18 @@ $(".notamember").hide();
  	$(".ketchup-error").hide();
  });
  
+ $("#logo").click(function(){
+   $("#login").hide();
+   $("#addBeer").hide();
+   $("#register").hide();
+   $("#suggestion").hide();
+   $("#detail").hide();
+   $(".ketchup-error").hide();
+   
+   $("#home").show();
+   return false;
+ });
+ 
  $(".navFavorite").click(function(){
   $("#home").hide();
  	$("#login").hide();

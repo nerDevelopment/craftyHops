@@ -48,7 +48,7 @@
 			</div><!--  end headerContent  -->
 		</header>
 		<div id="logoPos">
-			<h4 id="logo"><a href="http://www.crafty-hops.com">Crafty Hops</a></h4>
+			<h4 id="logo"><a href="#home">Crafty Hops</a></h4>
 		</div> <!--  end logoPos  -->
 		
 		<section id="sidenav" role="complementary">
