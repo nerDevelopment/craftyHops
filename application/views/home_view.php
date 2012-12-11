@@ -123,8 +123,10 @@
 			<h3>Suggestions</h3>
 			<div class="suggestedContainer">
         <figure>
-          <img src="inc/images/magic9.png" alt="suggest1" />
-          <figcaption>Magic Hat #9</figcaption>
+          <a href="#detail">
+            <img src="inc/images/magic9.png" alt="suggest1" />
+            <figcaption>Magic Hat #9</figcaption>
+          </a>
         </figure>
         <figure>
           <img src="inc/images/fatTire.png" alt="suggest2" />
@@ -161,6 +163,11 @@
 			</div><!-- end suggestedContainer -->
 		</div><!--  end container  -->	
 	</article><!--  end suggestion  -->	
+	
+<!--  ====================  Detail page ====================	-->
+		<article id="detail">
+			<p>Details</p>
+		</article><!--  end detail page  -->
 
 <!--  ====================  Favorite page ====================	-->
 		<article id="favorite">

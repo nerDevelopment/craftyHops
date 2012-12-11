@@ -345,6 +345,7 @@ nav ul{
 #suggestion h3{
   padding-left: 11em;
   font: 2em cubano, Helvetica, Arial;
+  text-shadow: 3px 0px 2px rgba(27, 7, 2, 1);
 }
 
 .suggestedContainer{
