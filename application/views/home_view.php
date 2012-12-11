@@ -122,12 +122,12 @@
 		<div class="container">
 			<h3>Suggestions</h3>
 			<div class="suggestedContainer">
+			<a href="#" class="beerDetail">
         <figure>
-          <a href="#detail">
-            <img src="inc/images/magic9.png" alt="suggest1" />
-            <figcaption>Magic Hat #9</figcaption>
-          </a>
+          <img src="inc/images/magic9.png" alt="suggest1" />
+          <figcaption>Magic Hat #9</figcaption>
         </figure>
+			</a>
         <figure>
           <img src="inc/images/fatTire.png" alt="suggest2" />
           <figcaption>Fat Tire</figcaption>

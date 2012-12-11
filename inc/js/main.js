@@ -54,8 +54,8 @@ $(".notamember").hide();
   $(".navHome").click(function(){
   	$("#login").hide();
   	$("#addBeer").hide();
- 	$("#favorite").hide();
- 	$("#register").hide();
+  	$("#favorite").hide();
+  	$("#register").hide();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -68,7 +68,7 @@ $(".notamember").hide();
  });
  
  $(".navFavorite").click(function(){
-  	$("#home").hide();
+  $("#home").hide();
  	$("#login").hide();
  	$("#addBeer").hide();
  	$("#register").hide();
@@ -128,6 +128,23 @@ $(".notamember").hide();
   	};
   	
   	$("#register").show();
+  	return false;
+  });
+  
+  $(".beerDetail").click(function(){
+    $("#home").hide();
+   	$("#favorite").hide()
+   	$("#addBeer").hide();
+  	$("#login").hide();
+  	$("#suggestion").hide();
+  	
+  	$(".ketchup-error").hide();
+  	if($('body').hasClass('active')){
+  		$("body").toggleClass("active");
+  		enable_scroll();
+  	};
+  	
+  	$("#detail").show();
   	return false;
   });
   
