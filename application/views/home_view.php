@@ -166,7 +166,18 @@
 	
 <!--  ====================  Detail page ====================	-->
 		<article id="detail">
-			<p>Details</p>
+		  <div class="container">
+  			<h3>Magic Hat #9</h3>
+  			<figure>
+  			  <img src="inc/images/magic9.png" alt="beer logo" />
+  			  <figcaption>Apricot flavoring. A Beer Cloaked in Secrecy An ale whose mysterious and unusual palate will swirl across your tongue and ask more questions than it answers. A beer brewed clandestinely and given a name whose meaning is never revealed. Why #9? Why, indeed. A sort of dry, crisp, fruity, refreshing, not quite pale ale. #9 is really impossible to describe because there's never been anything else quite like it. Fermented with our 150 year old strain of top fermenting English yeast.</figcaption>
+  			</figure>
+  			
+  			<ul>
+  			  <li><span><b>Brewed by:</b> Magic Hat Brewing Company - South Burlington, Vermont</span></li>
+  			  <li><span><b>ABV:</b> 5.10%</span></li>
+  			</ul>
+		  </div><!-- container -->
 		</article><!--  end detail page  -->
 
 <!--  ====================  Favorite page ====================	-->

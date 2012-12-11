@@ -353,12 +353,12 @@ nav ul{
   width: 825px;
 }
 
-figure{
+#suggestion figure{
   float: left;
   padding: 0 0 5em 5em;
 }
 
-figure img{
+#suggestion figure img{
   border: #d3c5c6 5px solid;
   /*
 -webkit-box-shadow:  1px 1px 2px 3px #2f0c02;
@@ -366,12 +366,45 @@ figure img{
 */
 }
 
-figcaption{
+#suggestion figcaption{
   font: 1.3em quaver_sans, Helvetica, Arial;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
+/*------------------------------DETAIL PAGE-------------------------------*/
+#detail h3{
+  padding-left: 11em;
+  font: 2em cubano, Helvetica, Arial;
+  text-shadow: 3px 0px 2px rgba(27, 7, 2, 1);
+}
+
+#detail figure{
+  padding-left: 24em;
+}
+
+#detail figure img{
+  float: left;
+}
+
+#detail figcaption{
+  font: 1.3em quaver_sans, Helvetica, Arial;
+	letter-spacing: 1px;
+	width: 75%;
+	position: relative;
+	left: 20px;
+}
+
+#detail ul{
+  margin-left: 21.5em;
+}
+
+#detail li{
+  display: inline;
+  font: 1.3em quaver_sans, Helvetica, Arial;
+	letter-spacing: 1px;
+	margin-right: 4em;
+}
 /*-------------------------------FORMS------------------------------*/
 #addBeer li, #registerPage li, #login li{
 	margin-bottom: 1em;

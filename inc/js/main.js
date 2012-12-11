@@ -50,12 +50,14 @@ $(".notamember").hide();
   $("#favorite").hide();
   $("#register").hide();
   $("#suggestion").hide();
+  $("#detail").hide();
   
   $(".navHome").click(function(){
   	$("#login").hide();
   	$("#addBeer").hide();
   	$("#favorite").hide();
   	$("#register").hide();
+  	$("#detail").hide();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -72,6 +74,8 @@ $(".notamember").hide();
  	$("#login").hide();
  	$("#addBeer").hide();
  	$("#register").hide();
+ 	$("#suggestion").hide();
+ 	$("#detail").hide();
  	$(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
@@ -84,10 +88,12 @@ $(".notamember").hide();
  });
  
  $(".navAddbeer").click(function(){
-  	$("#home").hide();
+  $("#home").hide();
  	$("#login").hide();
  	$("#favorite").hide();
  	$("#register").hide();
+ 	$("#suggestion").hide();
+ 	$("#detail").hide();
  	$(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
@@ -104,6 +110,8 @@ $(".notamember").hide();
    	$("#favorite").hide();
    	$("#addBeer").hide();
    	$("#register").hide();
+   	$("#suggestion").hide();
+   	$("#detail").hide();
    	$(".ketchup-error").hide();
    	
    	if($('body').hasClass('active')){
@@ -120,6 +128,8 @@ $(".notamember").hide();
    	$("#favorite").hide()
    	$("#addBeer").hide();
   	$("#login").hide();
+  	$("#suggestion").hide();
+  	$("#detail").hide();
   	$(".ketchup-error").hide();
   	
   	if($('body').hasClass('active')){
@@ -166,14 +176,14 @@ $(".notamember").hide();
   		$("#login").hide();
   		$(".ketchup-error").hide();
   		$("#register").hide();
+  		$("#detail").hide();
   		
   		if($('body').hasClass('active')){
   			$("body").toggleClass("active");
   			enable_scroll();
   		};
   		$("#suggestion").show();
-  		return false;
-  		
+  		return false;		
   });
   
   $("#registerPage").submit(function(){
