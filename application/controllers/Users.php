@@ -21,15 +21,20 @@ class Users extends CI_Controller {
 						'email' => $user[0]['email'],
 						'loggedIn' => TRUE
 					);
-		//	$this->session->set_userdata($data);
 	}
-		
+	
 	public function addUserToData()
-		{
+	{
+		$email_exists = $this->users_model->email_exists($_POST['email']);
+		if ($email_exists){
+			
+		}else{
 			$user = $this->users_model->addUser($_POST);
 			$this->setSession($user);
+			
 		}
-	
+	}
+			
 	public function addFbUser()
 	{
 		$exists = $this->users_model->checkFaceData($_POST);

@@ -176,7 +176,7 @@ $(".notamember").hide();
 					 'email': $("#email").val(),
 					 'pass': $("#pass").val()
 					},function(success){
-						window.location = 'http://www.crafty-hops.com/Jessica';		
+						//window.location = 'http://www.crafty-hops.com/Jessica';		
 				});
 				}else{
 				$(".error").append('<p>Please make sure your passwords match!</p>');

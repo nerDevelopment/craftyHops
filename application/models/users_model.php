@@ -18,6 +18,13 @@ class users_model extends CI_Model{
 		$results = $query->result_array();
 		return $results;
 	}
+	
+	public function email_exists($user)
+	{
+		$emailCh = $this->db->query("Select email From Users Where email ='$user'");
+		return ($emailCh->num_rows() > 0) ? true : false;
+	}
+	
 	public function addUser($user)
 	{
 		$password = $_POST['pass'];
@@ -26,20 +33,14 @@ class users_model extends CI_Model{
 		$email = $_POST["email"];
 		$info = $_POST;
 			
-			$emailCh = $this->db->query('Select email from Users Where email ="'.$email.'"');
-		if($emailCh->num_rows() > 0){
-			//Ask about throwing an error
-		}
-		else{
 			$this->db->query('Insert into Users(firstName, lastName, email, password)
 												Value("'.$info['firstN'].'","'.$info["lastN"].'","'.$email.'","'.$newPass.'")');
 				
-				$userId = $this->db->insert_id();
-						  
-			$query = $this->db->query('Select fistName, lastname, user_id From Users Where user_Id ="'.$userId.'";');
-			$results = $query->result_array();
-			return $results;
-		}
+//				$userId = $this->db->insert_id();
+//						  
+//			$query = $this->db->query('Select fistName, lastname, user_id From Users Where user_Id ="'.$userId.'";');
+//			$results = $query->result_array();
+//			return $results;
 	}
 		
 		public function checkFaceData($fbUser_id)
