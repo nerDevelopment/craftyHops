@@ -27,6 +27,11 @@ class Users extends CI_Controller {
 	{
 		$email_exists = $this->users_model->email_exists($_POST['email']);
 		if ($email_exists){
+			echo json_encode (array(
+				'success' => false,
+				'message' => 'emailError',
+				'text' => 'Sorry, it looks like your email already exists!'
+			));
 			
 		}else{
 			$user = $this->users_model->addUser($_POST);
