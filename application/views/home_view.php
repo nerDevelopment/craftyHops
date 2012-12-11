@@ -172,11 +172,14 @@
   			  <img src="inc/images/magic9.png" alt="beer logo" />
   			  <figcaption>Apricot flavoring. A Beer Cloaked in Secrecy An ale whose mysterious and unusual palate will swirl across your tongue and ask more questions than it answers. A beer brewed clandestinely and given a name whose meaning is never revealed. Why #9? Why, indeed. A sort of dry, crisp, fruity, refreshing, not quite pale ale. #9 is really impossible to describe because there's never been anything else quite like it. Fermented with our 150 year old strain of top fermenting English yeast.</figcaption>
   			</figure>
-  			
   			<ul>
   			  <li><span><b>Brewed by:</b> Magic Hat Brewing Company - South Burlington, Vermont</span></li>
   			  <li><span><b>ABV:</b> 5.10%</span></li>
   			</ul>
+  			
+  			<div class="section">
+		      <h3>Reviews</h3>
+		    </div><!-- end section -->
 		  </div><!-- container -->
 		</article><!--  end detail page  -->
 
@@ -200,14 +203,14 @@
 						<div class="wrap">
 							<div class="grids">
 								<div class="grid-6 info">
-									<h2>Add a Beer</h2>
-									<p>Add a beer to our database and help other users! While we might be amazing in our knowlage, we sadly don't know everything about you local beers. That means that we a little help from YOU by adding beers to our database. This way we can let everyone know about the awesome beers in your area!</p>
-									<p>Please keep in mind that your beer has to go through our moderators just to make sure everything is perfect before it will show up in our database or on the website.</p>
+									<h3>Add a Beer</h3>
+									<p>Add a beer to our database and help other users! While we might be amazing in our knowledge, we sadly don't know everything about you local beers. That means that we a little help from YOU by adding beers to our database. This way we can let everyone know about the awesome beers in your area!</p>
+									<p><i>*Please keep in mind that your beer has to go through our moderators just to make sure everything is perfect before it will show up in our database or on the website.</i></p>
 								</div><!--  end grid-6 -->
 								<div class="grid-6">
 									<form id="addBeer" name="form" method="post" action="#">
 										<ul class="fields">										
-											<li>	<span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" data-validate="validate(required)"/></li>
+											<li><span class="titles">Name:</span><input type="text" name="name" class="colorized" id="name" data-validate="validate(required)"/></li>
 											<li><span class="titles">Brewed by:</span><input type="text" name="brewed" id="brewed" class="colorized"/></li>
 											<li><span class="titles">File:</span><input type="file" class="file" name="beerimage" id="beerimage"  /></li>
 											<li><input type="submit"  value="Add" class="submit"/></li>

@@ -1,11 +1,11 @@
 /*----------------------------------------INFORMATION------------------------------
 Author:  nerDevelopment
 Project: Crfty Hops
-Date: 12/10/2012
+Date: 12/11/2012
 
     LAST UPDATE
 Author: Rach
-Time: 4:10 pm
+Time: 12:10 pm
 
     STYLE GUIDE
 HTML background color: #411a0a
@@ -95,7 +95,7 @@ p, h1, form{
 }
 
 .grid-4, .grid-one-third {
-width: 29.5%;
+  width: 29.5%;
 }
 
 /*----------------------------------GLOBAL---------------------------*/
@@ -408,16 +408,25 @@ nav ul{
 /*-------------------------------FORMS------------------------------*/
 #addBeer li, #registerPage li, #login li{
 	margin-bottom: 1em;
-	font-size: 1.3em;
+	font: 1.3em cubano, Helvetica, Arial;
+	letter-spacing: 1px;
 }
 
 #addBeer p{
 	text-align: left;
+	font: 1.3em quaver_sans, Helvetica, Arial;
+	letter-spacing: 1px;
+}
+
+#addBeer h3{
+	font: 2em cubano, Helvetica, Arial;
+	margin: .5em;
 }
 
 .titles{
 	float: left;
 	width: 6em;
+	color: #ccb9a2;
 }
 
 #registerPage .titles{
@@ -429,14 +438,41 @@ nav ul{
 	margin-top: 5em;
 }
 
-.fields input{
+.submit{
+  background: #e99d4a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e99d4a 45%, #e57d40 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(45%,#e99d4a), color-stop(100%,#e57d40)); /*Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e99d4a 45%,#e57d40 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e99d4a 45%,#e57d40 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e99d4a', endColorstr='#e57d40',GradientType=0 ); /* IE6-9*/
+	border: #c9480f;
+	border-radius: .2em;
+	padding: .2em .2em;
+	font: 1.3em cubano, Helvetica, Arial;
+	color: #fff;
+	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1);
+	margin-left: 10em;
+	text-align: center;
+	width: 34%
+}
+
+.titles input{
 	border-radius: .2em;
 	width: 60%;
+	font-size: 1.3em;
 }
 
 .colorized{
+	border-radius: .3em;
+	font-size: 2.5em;
+	width: 50%;
 	background-color: #5e2709;
 	border-color: #582408;
+	color: #ccb9a2;
+	outline: none;
+	text-indent: .2em;
 }
 
 #registerPage .fields input{
