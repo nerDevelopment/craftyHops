@@ -1,10 +1,11 @@
 <?php
+//to get user information grab the session information
   $emailTo = 'swampgliders@gmail.com';
   $subject = 'Add new Beer';
   $name = $_POST['name'];
-  $email = $_POST['brewed'];
-  $mess = $_POST['image'];
-  $header = "";
+  $brewed = $_POST['brewed'];
+  $img = $_POST['beerimage'];
+  $header = "Beer name: $name Brewed by: $brewed Image: $img";
   
-   mail($emailTo, $subject, $mess, $header) or die("Error");   
+   mail($header) or die("Error");   
 ?>

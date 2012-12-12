@@ -58,6 +58,8 @@ $(".notamember").hide();
   	$("#favorite").hide();
   	$("#register").hide();
   	$("#detail").hide();
+  	  $("#suggestion").hide();
+  	
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -209,14 +211,26 @@ $(".notamember").hide();
 		{
 			if($("#pass").val() == $("#repass").val())
 			{
-			$.post('../Jessica/index.php/Users/addUserToData',
-					{'firstN': $("#firstN").val(),
+			$.ajax({
+				url: "../Jessica/index.php/Users/addUserToData",
+				type: "POST",
+				dataType: 'json',
+					data: {'firstN': $("#firstN").val(),
 					'lastN': $("#lastN").val(),
 					 'email': $("#email").val(),
 					 'pass': $("#pass").val()
-					},function(success){
-						//window.location = 'http://www.crafty-hops.com/Jessica';		
+					 },
+					success: function(d){
+						 console.log(d.text);
+						 $(".error").empty();
+						 $(".error").append(d.text);
+					},
+					error: function() {
+						$(".error").empty();
+						$(".error").append('');
+					}	
 				});
+			
 				}else{
 				$(".error").append('<p>Please make sure your passwords match!</p>');
 					return false;

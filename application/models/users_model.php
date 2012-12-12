@@ -54,7 +54,7 @@ class users_model extends CI_Model{
 												email = "'.$info["email"].'", profilePic"'.$info["url"].'"
 												Where Users.fbUser_id ="'.$info["fbUser_id"].'"');
 					
-				$query = $this->db->query('Select email, fbUser_id From users Where fbUser_id ="'.$fbUser["fbUser_id"].'";');
+				$query = $this->db->query('Select email, fbUser_id From Users Where fbUser_id ="'.$fbUser["fbUser_id"].'";');
 					$results = $query->result_array();
 					return $results;
 			}else{

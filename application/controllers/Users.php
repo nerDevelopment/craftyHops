@@ -2,7 +2,7 @@
 
 class Users extends CI_Controller {
 
-
+	
 	function __construct()
 	{
 		parent::__construct();
@@ -42,7 +42,7 @@ class Users extends CI_Controller {
 			
 	public function addFbUser()
 	{
-		$exists = $this->users_model->checkFaceData($_POST);
+		$user = $this->users_model->checkFaceData($_POST);
 		$this->setSession($user);
 	}
 }

@@ -19,7 +19,9 @@
 	<link rel="stylesheet" href="inc/css/toast/toast.css" />
 	<link rel="stylesheet" href="inc/css/screen.css"/>
 	<link rel="stylesheet" href="inc/css/mobile.css"/>		
-	<link rel="stylesheet" href="inc/js/plugins/ketchup/css/jquery.ketchup.css" type="" />
+	<link rel="stylesheet" href="inc/js/plugins/ketchup/css/jquery.ketchup.css" type="" />	
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+
 		
 <!--  ==================	Google and modenizer js =================	-->	
 	<script  src="inc/js/google.js" type="text/javascript"></script>
@@ -297,8 +299,11 @@
 	   	</footer>
 
 <!--  ====================	Jquery and facebook ====================	-->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 		<script src="inc/js/plugins/ketchup/js/jquery.ketchup.all.min.js" type="text/javascript"></script>
+		
+		<script src="inc/js/suggestion.js" type="text/javascript"></script>
 		<script src="inc/js/main.js" type="text/javascript"></script>
 		<script src="inc/js/face.js"></script>	
 		<div id="fb-root"></div>
