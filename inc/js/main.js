@@ -51,6 +51,8 @@ $(".notamember").hide();
   $("#register").hide();
   $("#suggestion").hide();
   $("#detail").hide();
+  $( ".sudggestInput" ).empty();
+
   
   $(".navHome").click(function(){
   	$("#login").hide();
@@ -58,8 +60,9 @@ $(".notamember").hide();
   	$("#favorite").hide();
   	$("#register").hide();
   	$("#detail").hide();
-  	  $("#suggestion").hide();
-  	
+  	 $("#suggestion").hide();
+  	 $( ".sudggestInput" ).empty();
+  	 $(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -68,7 +71,6 @@ $(".notamember").hide();
  	  	
  	$("#home").show();
  	return false;
- 	$(".ketchup-error").hide();
  });
  
  $("#logo").click(function(){
@@ -78,6 +80,7 @@ $(".notamember").hide();
    $("#suggestion").hide();
    $("#detail").hide();
    $(".ketchup-error").hide();
+   $( ".sudggestInput" ).empty();
    
    $("#home").show();
    return false;
@@ -91,6 +94,7 @@ $(".notamember").hide();
  	$("#suggestion").hide();
  	$("#detail").hide();
  	$(".ketchup-error").hide();
+ 	$('.sudggestInput').val('');
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -109,6 +113,7 @@ $(".notamember").hide();
  	$("#suggestion").hide();
  	$("#detail").hide();
  	$(".ketchup-error").hide();
+ 	$( ".sudggestInput" ).empty();
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -127,6 +132,7 @@ $(".notamember").hide();
    	$("#suggestion").hide();
    	$("#detail").hide();
    	$(".ketchup-error").hide();
+   	$( ".sudggestInput" ).empty();
    	
    	if($('body').hasClass('active')){
    		$("body").toggleClass("active");
@@ -145,6 +151,7 @@ $(".notamember").hide();
   	$("#suggestion").hide();
   	$("#detail").hide();
   	$(".ketchup-error").hide();
+  	$( ".sudggestInput" ).empty();
   	
   	if($('body').hasClass('active')){
   		$("body").toggleClass("active");
@@ -161,6 +168,7 @@ $(".notamember").hide();
    	$("#addBeer").hide();
   	$("#login").hide();
   	$("#suggestion").hide();
+  	$( ".sudggestInput" ).empty();
   	
   	$(".ketchup-error").hide();
   	if($('body').hasClass('active')){
@@ -191,12 +199,13 @@ $(".notamember").hide();
   		$(".ketchup-error").hide();
   		$("#register").hide();
   		$("#detail").hide();
-  		
+ 
   		if($('body').hasClass('active')){
   			$("body").toggleClass("active");
   			enable_scroll();
   		};
   		$("#suggestion").show();
+  		 $('.sudggestInput').val('');
   		return false;		
   });
   
