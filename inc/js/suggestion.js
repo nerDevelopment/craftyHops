@@ -8,10 +8,23 @@ $(document).ready(function(){
 				data: {},
 				success: function(d){
 					var jsonData = d.name;
-					var beerNam = $.map(jsonData, function (obj) { return obj.beerName; });
-					//console.log(beerNam);
+					var beerNam = $.map(jsonData, function (obj) { return obj.beerName });	
+					var ratings = $.map(jsonData, function (obj) { return obj.rating ; });	
 					
-					$(".sudggestInput").autocomplete({source: beerNam});
+					console.log(beerNam);				
+					$(".sudggestInput").autocomplete({source: beerNam,
+						select: function(event, ui) {
+							var obj = ui.item;
+							//console.log(obj);
+							$('.sudggestInput').val(obj.beerNam);
+							$('.rating').val(obj.ratings);
+						}
+					});
+					
+					
+					
+	
+					
 				},
 				error: function() {
 				}	

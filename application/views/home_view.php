@@ -77,13 +77,13 @@
 					<div class="wrap">
 						<div class="grids">
 							<div class="grid-4 ">
-								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1"   data-validate="validate(required)"/></p>
+								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1"   data-validate="validate(required)"/><input type="hidden" name="rating1" class="rating" /></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 							<div class="grid-4 ">
-		  	 	  		  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2"  data-validate="validate(required)" /></p>
+		  	 	  		  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2"  data-validate="validate(required)" /><input type="hidden" name="rating2" class="rating" /></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 		  	 	  		  	<div class="grid-4 ">
-		  	 	  		  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3" data-validate="validate(required)" /></p>
+		  	 	  		  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3" data-validate="validate(required)" /><input type="hidden" name="rating3" class="rating" /></p>
 		  	 	  		  	</div><!--  end grid-4  -->
 		  	 	  		  		<p class="btnPos"><button class="findBtn">Find Beer!</button></p>
 						</div><!--  end grids -->
@@ -268,9 +268,9 @@
 				</div><!--  end notamember  -->
 					
 				<div class="membercontent">
-					<div class="error"></div>
 					<div id="registerForm" class="stylized">
 						<h2>Register</h2>
+						<div class="error"></div>
 						<form id="registerPage" name="form" method="post" action="#">
 							<div class="twoCol">
 								<ul class="fields">

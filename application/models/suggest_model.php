@@ -12,7 +12,7 @@ class suggest_model extends CI_Model{
 	
 	public function autoName($name)
 	{
-			$query = $this->db->query('Select beerName From Beers');
+			$query = $this->db->query('Select beerName, rating From Beers limit 300');
 				$results = $query->result_array();
 				return $results;
 	}

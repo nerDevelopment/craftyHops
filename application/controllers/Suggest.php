@@ -15,7 +15,7 @@ class Suggest extends CI_Controller {
 	public function autocomplete()
 	{
 		$beer = $this->suggest_model->autoName($_POST);
-		//echo json_encode($beer);
+		
 		echo json_encode (array(
 			'name' => $beer
 		));
