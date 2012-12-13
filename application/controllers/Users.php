@@ -2,7 +2,7 @@
 
 class Users extends CI_Controller {
 
-	
+
 	function __construct()
 	{
 		parent::__construct();
@@ -12,37 +12,64 @@ class Users extends CI_Controller {
 	public function index()
 	{
 	}
-	public function setSession($user)
-		{
-			$data = array(
-						'fbUser_id' => $user[0]['fbUser_id'],
-						'firstName' => $user[0]['firstName'],
-						'lastName' => $user[0]['lastName'],
-						'email' => $user[0]['email'],
-						'loggedIn' => TRUE
-					);
-	}
 	
 	public function addUserToData()
 	{
-		$email_exists = $this->users_model->email_exists($_POST['email']);
-		if ($email_exists){
-			echo json_encode (array(
+		//$email_exists = $this->users_model->email_exists($_POST['email']);
+		/* $loginObjct = array('email' => $this->input->post('email')); */
+		/* $login = $this->users_model->checkRegister($loginObjct); */
+		/*
+if($email_exists){
+		  echo json_encode (array(
 				'success' => false,
 				'message' => 'emailError',
 				'text' => 'Sorry, it looks like your email already exists!'
 			));
-			
 		}else{
-			$user = $this->users_model->addUser($_POST);
-			$this->setSession($user);
-			
+		  $user = $this->users_model->addUser($_POST);
+			$this->session->set_userdata('currentUser', $currentUser);
+			$this->session->set_userdata('loggedin', true);
+			echo('added');
 		}
+*/
+
+
+    $email_exists = $this->users_model->email_exists($_POST['email']);
+  		if ($email_exists){
+  			echo json_encode (array(
+  				'success' => false,
+  				'message' => 'emailError',
+  				'text' => 'Sorry, it looks like your email already exists!'
+  			));
+  		}else{
+  			$user = $this->users_model->addUser($_POST);  
+  			$this->session->set_userdata('currentUser', $currentUser);
+  			$this->session->set)userdata('loggedin', true);
+  			echo('user added');
+  			echo($currentUser);			
+  		}
 	}
-			
+		
 	public function addFbUser()
 	{
-		$user = $this->users_model->checkFaceData($_POST);
+		$exists = $this->users_model->checkFaceData($_POST);
 		$this->setSession($user);
 	}
+	
+	/*
+public function checkLogin(){
+  	$salt = 'nerDev';
+		$loginObjct = array('email' => $this->input->post('email'), 'password' => md5($salt.$this->input->post('password')));
+		$login = $this->Users->checkLogin($loginObjct);
+		
+		if($login == false){
+  		echo 'email and/or password is incorrect.';
+		}else{
+  		$currentUser = $login;
+  		$this->session->set_userdata('currentUser', $currentUser);
+  		$this->session->set_userdata('loggedin', true);
+  		echo('logged in');
+		}
+	}	
+*/
 }
