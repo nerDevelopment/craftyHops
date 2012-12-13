@@ -249,7 +249,7 @@
 							<ul class="fields">
 								<li><span class="titles">Email:</span><input type="text" name="logemail" id="logemail" class="colorized" data-validate="validate(email)"/></li>
 								<li><span  class="titles">Password:</span><input type="text" name="logpass" id="logpass" class="colorized" data-validate="validate(required)"/></li>
-								<li><input type="submit"  value="Register" class="submit"/></li>
+								<li><input type="submit"  value="Log In" class="submit"/></li>
 							</ul>
 									
 							<div class="clear"></div>							
@@ -278,7 +278,7 @@
 									<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized" data-validate="validate(required)"/></li>							
 									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" data-validate="validate(email)"/></li>
 									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" data-validate="validate(required)"/></li>
-									<li>	<span class="titles">Password:</span><input type="text" name="repass" class="colorized" id="repass" data-validate="validate(required)"/></li>
+									<li>	<span class="titles">Re-Enter Password:</span><input type="text" name="repass" class="colorized" id="repass" data-validate="validate(required)"/></li>
 									<li style="display: none;">	<span class="titles">Hidden:</span><input type="text" name="hid" class="colorized" id="hid" value="nerDev22"/></li>
 									<li><input type="submit"  value="Register" class="submit"/></li>
 								</ul>
