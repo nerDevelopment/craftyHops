@@ -8,8 +8,8 @@ $(document).ready(function(){
 				data: {},
 				success: function(d){
 					var jsonData = d.name;
-					var beerNam = $.map(jsonData, function (obj) { return obj.beerName });	
-					var ratings = $.map(jsonData, function (obj) { return obj.rating ; });	
+					//This is what is grabbing the title and rating. The rating needs to be seperate than the title so it does not show, but it still needs to be attached to the title somehow.
+					var beerNam = $.map(jsonData, function (obj) { return obj.beerName + ' ' +obj.rating });	
 					
 					console.log(beerNam);				
 					$(".sudggestInput").autocomplete({source: beerNam,
@@ -17,7 +17,7 @@ $(document).ready(function(){
 							var obj = ui.item;
 							//console.log(obj);
 							$('.sudggestInput').val(obj.beerNam);
-							$('.rating').val(obj.ratings);
+							$('.rating').val(obj.beerNam);
 						}
 					});
 					
