@@ -318,7 +318,7 @@ nav ul{
 	font: 1.9em cubano, Helvetica, Arial;
 	color: #fff;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1);
-	margin-left: -1em;
+	margin-left: -1.3em;
 	text-align: center;
 }
 
@@ -453,7 +453,7 @@ nav ul{
 	font: 1.3em cubano, Helvetica, Arial;
 	color: #fff;
 	text-shadow: 8px 1px 6px rgba(200, 76, 34, 1);
-	margin-left: 10em;
+	margin-left: 4em;
 	text-align: center;
 	width: 34%
 }
@@ -539,21 +539,26 @@ footer li{
 		width: 6em;
 	}
 	
-	#addBeer .container{
-		padding-top: 6em;
-	}
 	
 	#suggestBeer{
 		padding: 1em 2em 2em;
 	}
-	.findBtn{
-		margin-left: -0.5em;
-	}
+	
 	
 	.posInput{
 		padding-left: 17em;
 	}
-}
+	
+	#addForm {
+	margin-left: 19em;
+	}
+	.info {
+	width: 46%;
+	}
+	.submit {
+	margin-left: 2em;
+	}
+}	
 
 @media screen and (max-width:1024px){
 
@@ -603,12 +608,18 @@ footer li{
 		width: 218px;
 	}
 	
-	#addBeer .container{
-		padding-top: 4em;
+	#addBeer .container {
+	padding-top: 13em;
 	}
 	
 	.posInput{
 		padding-left: 0;
+	}
+	#addForm{
+		margin: 0;
+	}
+	.info {
+	width: 43%;
 	}
 }
 
@@ -682,7 +693,7 @@ footer li{
 		width: 178px;
 	}
 	#addBeer .container{
-		padding-top: 2em;
+		padding-top: 10em;
 	}
 	
 	.posInput{

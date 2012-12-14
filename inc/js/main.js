@@ -51,7 +51,7 @@ $(".notamember").hide();
   $("#register").hide();
   $("#suggestion").hide();
   $("#detail").hide();
-  $( ".sudggestInput" ).empty();
+  $( ".sudggestInput" ).val('');
 
   
   $(".navHome").click(function(){
@@ -61,7 +61,7 @@ $(".notamember").hide();
   	$("#register").hide();
   	$("#detail").hide();
   	 $("#suggestion").hide();
-  	 $( ".sudggestInput" ).empty();
+  	$( ".sudggestInput" ).val('');
   	 $(".ketchup-error").hide();
  	
  	if($('body').hasClass('active')){
@@ -80,7 +80,7 @@ $(".notamember").hide();
    $("#suggestion").hide();
    $("#detail").hide();
    $(".ketchup-error").hide();
-   $( ".sudggestInput" ).empty();
+   $( ".sudggestInput" ).val('');
    
    $("#home").show();
    return false;
@@ -113,7 +113,7 @@ $(".notamember").hide();
  	$("#suggestion").hide();
  	$("#detail").hide();
  	$(".ketchup-error").hide();
- 	$( ".sudggestInput" ).empty();
+ 	$( ".sudggestInput" ).val('');
  	
  	if($('body').hasClass('active')){
  		$("body").toggleClass("active");
@@ -132,7 +132,7 @@ $(".notamember").hide();
    	$("#suggestion").hide();
    	$("#detail").hide();
    	$(".ketchup-error").hide();
-   	$( ".sudggestInput" ).empty();
+   $( ".sudggestInput" ).val('');
    	
    	if($('body').hasClass('active')){
    		$("body").toggleClass("active");
@@ -151,7 +151,7 @@ $(".notamember").hide();
   	$("#suggestion").hide();
   	$("#detail").hide();
   	$(".ketchup-error").hide();
-  	$( ".sudggestInput" ).empty();
+  	$( ".sudggestInput" ).val('');
   	
   	if($('body').hasClass('active')){
   		$("body").toggleClass("active");
@@ -168,7 +168,7 @@ $(".notamember").hide();
    	$("#addBeer").hide();
   	$("#login").hide();
   	$("#suggestion").hide();
-  	$( ".sudggestInput" ).empty();
+  	$( ".sudggestInput" ).val('');
   	
   	$(".ketchup-error").hide();
   	if($('body').hasClass('active')){
@@ -204,8 +204,27 @@ $(".notamember").hide();
   			$("body").toggleClass("active");
   			enable_scroll();
   		};
-  		$("#suggestion").show();
-  		 $('.sudggestInput').val('');
+  		
+  		$.ajax({
+  			url: "../Jessica/index.php/Suggest/suggestInfo",
+  			type: "POST",
+  			dataType: 'json',
+  				data: {'sudggest1': $("#sudggest1").val(),
+  				'sudggest2': $("#sudggest2").val(),
+  				 'sudggest3': $("#sudggest3").val(),
+  				 },
+  				success: function(d){
+  				
+  					 $("#suggestion").show();
+  					  $('.sudggestInput').val('');
+  				},
+  				error: function() {
+  					$(".error").empty();
+  					$(".error").append('');
+  				}	
+  			});
+  		
+  		
   		return false;		
   });
   

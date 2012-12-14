@@ -77,14 +77,14 @@
 					<div class="wrap">
 						<div class="grids">
 							<div class="grid-4 ">
-								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1"   data-validate="validate(required)"/><input type="hidden" name="rating1" class="rating"  value=" "/></p>
-		  	 	  		  	</div><!--  end grid-4  -->
-							<div class="grid-4 ">
-		  	 	  		  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2"  data-validate="validate(required)" /><input type="hidden" name="rating2" class="rating"  value=" "/></p>
-		  	 	  		  	</div><!--  end grid-4  -->
-		  	 	  		  	<div class="grid-4 ">
-		  	 	  		  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3" data-validate="validate(required)" /><input type="hidden" name="rating3" class="rating"  value=" "/></p>
-		  	 	  		  	</div><!--  end grid-4  -->
+								<p><span>1</span><input class="sudggestInput" type="text" name="sudggest1" id="sudggest1"   data-validate="validate(required)"/></p>
+									  	</div><!--  end grid-4  -->
+								<div class="grid-4 ">
+									  		<p><span>2</span><input class="sudggestInput" type="text" name="sudggest2" id="sudggest2"  data-validate="validate(required)" /></p>
+									  	</div><!--  end grid-4  -->
+									  	<div class="grid-4 ">
+									  		<p><span>3</span><input class="sudggestInput" type="text" name="sudggest3" id="sudggest3" data-validate="validate(required)" /></p>
+									  	</div><!--  end grid-4  -->
 		  	 	  		  		<p class="btnPos"><button class="findBtn">Find Beer!</button></p>
 						</div><!--  end grids -->
 					</div><!--  end wrap  -->
@@ -269,26 +269,37 @@
 					
 				<div class="membercontent">
 					<div id="registerForm" class="stylized">
-						<h2>Register</h2>
-						<div class="error"></div>
-						<form id="registerPage" name="form" method="post" action="#">
-							<div class="twoCol">
-								<ul class="fields">
-									<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized" data-validate="validate(required)"/></li>
-									<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized" data-validate="validate(required)"/></li>							
-									<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" data-validate="validate(email)"/></li>
-									<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" data-validate="validate(required)"/></li>
-									<li>	<span class="titles">Re-Enter Password:</span><input type="text" name="repass" class="colorized" id="repass" data-validate="validate(required)"/></li>
-									<li style="display: none;">	<span class="titles">Hidden:</span><input type="text" name="hid" class="colorized" id="hid" value="nerDev22"/></li>
-									<li><input type="submit"  value="Register" class="submit"/></li>
-								</ul>
-							</div><!--  end twoCol  -->	
-						</form>
+					<div class="wrap">
+						<div class="grids">
+							<div class="grid-6 info">
+								<h3>Add a Beer</h3>
+								<p>Add a beer to our database and help other users! While we might be amazing in our knowledge, we sadly don't know everything about you local beers. That means that we a little help from YOU by adding beers to our database. This way we can let everyone know about the awesome beers in your area!</p>
+								<p><i>*Please keep in mind that your beer has to go through our moderators just to make sure everything is perfect before it will show up in our database or on the website.</i></p>
+							</div><!--  end grid-6 -->
+							<div class="grid-6">
+							<h2>Register</h2>
+							<div class="error"></div>
+							<form id="registerPage" name="form" method="post" action="#">
+								<div class="twoCol">
+									<ul class="fields">
+										<li><span class="titles">First name:</span><input type="text" name="firstN" id="firstN" class="colorized" data-validate="validate(required)"/></li>
+										<li><span  class="titles">Last Name:</span><input type="text" name="lastN" id="lastN" class="colorized" data-validate="validate(required)"/></li>							
+										<li>	<span class="titles">Email:</span><input type="text" name="email" class="colorized" id="email" data-validate="validate(email)"/></li>
+										<li>	<span class="titles">Password:</span><input type="text" name="pass" class="colorized" id="pass" data-validate="validate(required)"/></li>
+										<li>	<span class="titles">Password:</span><input type="text" name="repass" class="colorized" id="repass" data-validate="validate(required)"/></li>
+										<li style="display: none;">	<span class="titles">Hidden:</span><input type="text" name="hid" class="colorized" id="hid" value="nerDev22"/></li>
+										<li><input type="submit"  value="Register" class="submit"/></li>
+									</ul>
+									</div><!--  end twoCol  -->	
+								</form>
+							</div>
+							</div>
+						</div>
 					</div><!--  end registrationForm  -->
 				</div><!--  end membercontent  -->
 			</div><!--  end container  -->
 		</article><!--  end register page  -->
-		
+				
 <!--  ====================  Footer page ====================	-->
 		<footer>
 	   		<ul>
