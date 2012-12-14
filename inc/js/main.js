@@ -215,8 +215,7 @@ $(".notamember").hide();
   				 },
   				success: function(d){
   				
-  					 $("#suggestion").show();
-  					  $('.sudggestInput').val('');
+  					 
   				},
   				error: function() {
   					$(".error").empty();
@@ -224,7 +223,8 @@ $(".notamember").hide();
   				}	
   			});
   		
-  		
+  		$("#suggestion").show();
+  		$('.sudggestInput').val('');
   		return false;		
   });
   
