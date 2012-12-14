@@ -94,28 +94,45 @@
 		  <div class="clear"></div>
 		  	 
 		  <div class="section">
-				<div class="wrap">
+		  <div id="rea">
+		  	<ul class="three">
+		  		<li><img class="sideImg" src="inc/img/reason3.png" alt="bar image" /></li>
+		  		<li class="text">Come back and tell us about your experience by writing a review, voting up a review, or adding a Craft beer to our collection.</li>
+		  	</ul>
+		  	<ul class="three">
+		  		<li><img class="sideImg" src="inc/img/reason2.png" alt="bar image" /></li>
+		  		<li class="text">Sort through suggested Craft beers and their reviews to enjoy the right taste for you.</li>
+		  	</ul>
+		  	<ul class="three">	
+		  		<li><img class="sideImg" src="inc/img/reason1.png" alt="bar image" /></li>
+		  		<li class="text ">Tell us your top three favorite beers and we'll calculate a selection of craft beers for you.</li>
+		  	</ul>
+		  	<div class="clear"></div>
+		  </div>
+		  					<!--<div class="wrap">
 		  	 	  	<div class="grids reasons">
 		  	 	  		<div class="grid-4 ">
 		  	 	  			<h3>FIND.</h3>	
 		  	 	  			<img class="sideImg" src="inc/img/reason1.png" alt="bar image" />
 		  	 	  			<p class="text">Tell us your top three favorite beers and we'll calculate a selection of craft beers for you.</p>
 		  	 	  			<div class="clear"></div>
-		  	 	  		</div><!--  end grid-4  -->	
+		  	 	  		</div><!--  end grid-4  --*>	
 		  	 	  		<div class="grid-4">
-		  	 	  			<h3>ENJOY.</h3>	
+		  	 	  			<h3>ENJOY.</h3>
+		  	 	  				
+		  	 	  			
 		  	 	  			<img class="sideImg" src="inc/img/reason2.png" alt="bar image" />
 		  	 	  			<p class="text">Sort through suggested Craft beers and their reviews to enjoy the right taste for you.</p>  
 		  	 	  			<div class="clear"></div>		
-		  	 	  		</div><!--  end grid-4  -->	
+		  	 	  		</div><!--  end grid-4  --*>	
 		  	 	  		<div class="grid-4">
 		  	 	  			<h3>SOCIALIZE.</h3>
 		  	 	  			<img class="sideImg" src="inc/img/reason3.png" alt="bar image" />		
 		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experience by writing a review, voting up a review, or adding a Craft beer to our collection.</p>
 		  	 	  			<div class="clear"></div>
-		  	 	  		</div><!--  end grid-4  -->
-		  	 	  	</div><!--  end grids and reasons  -->
-		  	 	  </div><!--  end wrap  -->
+		  	 	  		</div><!--  end grid-4  --*>
+		  	 	  	</div><!--  end grids and reasons  --*>
+		  	 	  </div><!--  end wrap  --*>-->
 				</div><!--  end section  -->
 			</div><!--  end container  -->
 		</article><!--  end home  -->	
@@ -272,12 +289,15 @@
 					<div class="wrap">
 						<div class="grids">
 							<div class="grid-6 info">
-								<h3>Add a Beer</h3>
-								<p>Add a beer to our database and help other users! While we might be amazing in our knowledge, we sadly don't know everything about you local beers. That means that we a little help from YOU by adding beers to our database. This way we can let everyone know about the awesome beers in your area!</p>
-								<p><i>*Please keep in mind that your beer has to go through our moderators just to make sure everything is perfect before it will show up in our database or on the website.</i></p>
+								<h3>Register</h3>
+									<ol>
+										<li>Save your favorite beers</li>
+										<li>Sharing your experence</li>
+										<li>Rate the reviews</li>
+									</ol>
+								
 							</div><!--  end grid-6 -->
 							<div class="grid-6">
-							<h2>Register</h2>
 							<div class="error"></div>
 							<form id="registerPage" name="form" method="post" action="#">
 								<div class="twoCol">
