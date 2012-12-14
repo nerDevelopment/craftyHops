@@ -98,19 +98,19 @@
 		  	 	  	<div class="grids reasons">
 		  	 	  		<div class="grid-4 ">
 		  	 	  			<h3>FIND.</h3>	
-		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />
+		  	 	  			<img class="sideImg" src="inc/img/reason1.png" alt="bar image" />
 		  	 	  			<p class="text">Tell us your top three favorite beers and we'll calculate a selection of craft beers for you.</p>
 		  	 	  			<div class="clear"></div>
 		  	 	  		</div><!--  end grid-4  -->	
 		  	 	  		<div class="grid-4">
 		  	 	  			<h3>ENJOY.</h3>	
-		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />
+		  	 	  			<img class="sideImg" src="inc/img/reason2.png" alt="bar image" />
 		  	 	  			<p class="text">Sort through suggested Craft beers and their reviews to enjoy the right taste for you.</p>  
 		  	 	  			<div class="clear"></div>		
 		  	 	  		</div><!--  end grid-4  -->	
 		  	 	  		<div class="grid-4">
 		  	 	  			<h3>SOCIALIZE.</h3>
-		  	 	  			<img class="sideImg" src="inc/img/side.png" alt="" />		
+		  	 	  			<img class="sideImg" src="inc/img/reason3.png" alt="bar image" />		
 		  	 	  			<p style="border: none;" class="text">Come back and tell us about your experience by writing a review, voting up a review, or adding a Craft beer to our collection.</p>
 		  	 	  			<div class="clear"></div>
 		  	 	  		</div><!--  end grid-4  -->
